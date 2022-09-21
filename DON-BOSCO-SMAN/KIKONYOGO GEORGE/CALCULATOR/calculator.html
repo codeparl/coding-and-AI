@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>
+        kiko-calc
+    </title>
+
+    <style>
+
+        #calic-box {
+            width: 270px;
+            height: auto;
+            background-color: grey;
+            text-align: center;
+            margin: 10% auto;
+            padding: 2rem;
+            border-radius: 35px;
+            display: block;
+        }
+
+        button {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 4px;
+            background-color: rgb(34, 56, 90);
+            color: white;
+            border: 1px solid black;
+            border-radius: 6px;
+            font-size: 20px;
+            text-align: center;
+            outline: none;
+            border: 0;
+        }
+.backg-color{
+background-color: burlywood;
+}
+        button:hover {
+            background-color: rgba(34, 56, 90, 0.7);
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 122, 244, 0.2), 0 6px 20px 0 rgba(0, 122, 244, 0.19);
+        }
+
+        #num-pad {
+            margin: 0px auto;
+            position: relative;
+            width: 270px;
+            height: auto;
+        }
+
+        #name {
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px;
+            width: 100%;
+            border: 2px solid rgb(34, 56, 90);
+            background-color: #D9E2F0;
+            font-size: 45px
+        }
+
+        #name:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 122, 244, 0.2), 0 6px 20px 0 rgba(0, 122, 244, 0.19);
+        }
+
+        form {
+            margin: 2px;
+            padding: 1px;
+        }
+    </style>
+</head>
+
+<body class="backg-color">
+    <div id="calic-box">
+        <input type="text" id="name" placeholder="0"  ondrag="shownumber()" />
+        <div id="num-pad">
+
+            <br />
+            <button type="button" class="padVal" onClick="getButtonVal('k-17')" id="k-17">^</button>
+            <button type="button" class="padVal"
+                onClick="getElementById('expre').value = squareRootOf(getElementById('expre').value)"
+                id="k-18">Sqr</button>
+
+
+            <button class="padVal" onClick="clearAll()">C</button>
+            <button class="padVal" onClick="deleteChar();" color="red">Del</button>
+            <br />
+
+            <button type="button" class="padVal" onClick="getButtonVal('k-1')" id="seven">7</button>
+            <button class="padVal" onClick="getButtonVal('k-2')" id="k-2">8</button>
+            <button class="padVal" onClick="getButtonVal('k-3')" id="k-3">9</button>
+            <button class="padVal" onClick="getButtonVal('k-4')" id="k-4">/</button>
+            <br />
+            <button class="padVal" onClick="getButtonVal('k-5')" id="k-5" value="4">4</button>
+            <button class="padVal" onClick="getButtonVal('k-6')" id="k-6">5</button>
+            <button class="padVal" onClick="getButtonVal('k-7')" id="k-7">6</button>
+            <button class="padVal" onClick="getButtonVal('k-8')" id="k-8">*</button>
+            <br />
+
+            <button class="padVal" onClick="getButtonVal('k-9')" id="k-9">1</button>
+            <button class="padVal" onClick="getButtonVal('k-10')" id="k-10">2</button>
+            <button class="padVal" onClick="getButtonVal('k-11')" id="k-11">3</button>
+            <button class="padVal" onClick="getButtonVal('k-12')" id="k-12">-</button>
+            <br />
+            <button class="padVal" onClick="getButtonVal('k-13')" id="k-13">.</button>
+            <button class="padVal" onClick="getButtonVal('k-14')" id="k-14">0</button>
+            <button id="k-15" onClick="calculate()">+</button>
+            <button class="padVal" onClick="getButtonVal('k-16')" id="k-16">=</button>
+            <br>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function shownumber(){
+        document.getElementById("seven").style.display ='block'
+        }
+    </script>
+</body>
+
+</html>

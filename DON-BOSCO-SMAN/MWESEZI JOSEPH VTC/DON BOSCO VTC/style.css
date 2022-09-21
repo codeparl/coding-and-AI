@@ -1,0 +1,310 @@
+body {
+    background-color: #e1ebe1;
+}
+
+/*my navigation bar*/
+nav {
+    background-color: yellowgreen;
+    padding: 5px;
+    width: 73.5%;
+    margin-top: -82.8pt;
+    display: flex;
+    padding: 10px;
+    position: fixed;
+}
+
+main {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/*my menu icon*/
+aside {
+    border: 3px solid black;
+    width: 25px;
+    margin: 5px;
+    padding: px;
+    height: 0px;
+}
+
+/*button {
+    margin-left: 5px;
+    color: darkblue;
+    cursor: pointer;
+}*/
+
+label {
+    margin-right: 5px;
+}
+
+/*end of nav bar*/
+/*my main page*/
+#main {
+    position: static;
+    margin-top: 0px;
+    border: #7f877f 1px solid;
+    width: 75%;
+    margin: 100pt;
+    margin-bottom: 20px;
+    background-color: darkslategray;
+    max-height: 700px;
+    position: fixed;
+    overflow: scroll;
+}
+
+/*my intoduction bar*/
+#intro {
+    margin-bottom: 20px;
+    display: flex;
+    margin: 8px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #7f877f;
+    width: 98%;
+}
+
+.adb {
+    color: rgb(155, 250, 21);
+}
+
+p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    color: white;
+}
+
+.img {
+    width: 250pt;
+    height: 120px;
+    margin-right: 10px;
+    padding-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.h1 {
+    width: 65%;
+    padding: 10px;
+    margin: 10px;
+    font-family:fantasy;
+    color: darkblue;
+    font-weight: bolder;
+}
+
+h2 {
+    color: #b5d2b5;
+    /* padding-left: 30px;
+    padding-right: 30px;*/
+    margin: 20pt;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#com1 {
+    display: flex;
+
+}
+
+#com1 div img {
+    width: 80%;
+    padding: 40px;
+    height: 180px;
+}
+
+#com2 {
+    display: flex
+}
+
+#com2 div img {
+    height: 170px;
+    width: 80%;
+    padding-left: 20px;
+    padding: 30px;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    background-color: #4d4f4d;
+    border-radius: 20px;
+}
+
+.anchor {
+    position: relative;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 50px;
+    padding-left: 220pt;
+    padding-right: 220pt;
+
+}
+
+.course img {
+    position: relative;
+    width: 80%;
+    margin: 10px;
+    padding-top: 0px;
+    height: 200px;
+    margin-left: 30px;
+}
+
+.course p {
+    color: black;
+}
+
+h6 {
+    font-size: 2em;
+}
+
+.hi {
+    text-align: center;
+    background-color: #4d4f4d;
+    color: rgb(230, 229, 238);
+}
+
+/*my form marks the search box*/
+form {
+    font-size: 1.5rem;
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 350px;
+}
+
+input {
+    width: 80%;
+    margin: 0px;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+/*course section*/
+.course {
+    background-color: rgb(124, 69, 69);
+    width: 40%;
+    margin: 20px;
+}
+
+/*content styles*/
+#content {
+    padding: 1px;
+}
+
+#content1 {
+    background-color: #2dde2d6f;
+    display: flex;
+    margin: 30pt;
+}
+
+#content2 {
+    background-color: #44e3446f;
+    display: flex;
+    margin: 30pt;
+}
+
+/*styles of content links*/
+.anchors {
+    position: relative;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 50px;
+    padding-left: 10pt;
+    padding-right: 10pt;
+
+}
+
+/*footer section*/
+#footer {
+    margin-top: -50pt;
+    background-color: #3cf53c4a;
+    margin-left: 30pt;
+    margin-right: 30pt;
+}
+
+footer {
+    display: block;
+    /*  background-color: rgba(70, 69, 73, 0.273);*/
+    color: rgb(29, 10, 240);
+    font-size: 2rem;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 80px;
+    word-spacing: 10px;
+    margin-top: 10px;
+}
+
+hr {
+    width: 75%;
+    margin-left: 100pt;
+    color: black;
+    font-weight: 100px bolder;
+}
+
+.last {
+    position: relative;
+    left: 30%;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer h1 {
+    margin-left: 100px;
+    padding-left: 0px;
+color: aqua;
+}
+
+/*verticle line*/
+.vert {
+    margin-left: 20px;
+    width: 1px;
+    height: 550px;
+    float: inline-start;
+}
+
+/*search icon*/
+.circle {
+    border: 1px solid black;
+    margin: 20px;
+    margin-top: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(250, 242, 242);
+}
+
+.search {
+    position: relative;
+    top: 5px;
+    transform: rotate(45deg);
+    left: -122px;
+    width: 13px;
+    background-color: rgb(246, 241, 241);
+    height: 3px;
+    color: #BBBB;
+}
+
+section {
+    /* background-color: rgb(12, 1, 1); 
+    width: 30%;
+     height: 30px;   */
+    width: fit-content;
+    height: fit-content;
+    background-color: #4d4f4d;
+    border-radius: 10px;
+    cursor: pointer;
+}

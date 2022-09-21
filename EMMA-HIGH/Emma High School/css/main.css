@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: geog;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: geog;
+    src: url(../fonts/Geogrotesq.ttf);
+}
+
+body {
+    padding: 20px 20px;
+    background: #222233;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+/* NAVBAR_1 */
+
+    .navbar1 {
+        width: 100%;
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        background: #fff;
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .navbar1 div {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar1 img {
+        width: 230px;
+    }
+
+    .navbar1 .hamburger {
+        display: flex;
+        margin-left: 40px;
+        cursor: pointer;
+        flex-direction: column;
+    }
+
+    .navbar1 .hamburger .bar {
+        width: 20px;
+        height: 3px;
+        margin: 2px;
+        border-radius: 5px;
+        background: #000;
+        transition: .5s ease;
+    }
+
+    .hamburger.active :nth-child(1) {
+        transform: rotate(45deg) translate(10px);
+    }
+    .hamburger.active :nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active :nth-child(3) {
+        transform: rotate(-45deg) translate(8px);
+    }
+
+    .top_links {
+        /* z-index: 1111; */
+        top: 123px;
+        right: 20px;
+        max-width: 0;
+        position: absolute;
+        width: 400px;
+        height: 501px;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #1a1a1ac8;
+        transition: .8s ease-in-out;
+    }
+    
+    .top_links.active {
+        max-width: 1000px;
+        padding: 40px ;
+    }
+    
+    .top_links li {
+        margin: 30px;
+        list-style: none;
+    }
+    .top_links a {
+        color: #fff;
+        transition: .3s ease;
+        text-decoration: none;
+    }
+    .top_links a:hover {
+        color: #3db166;
+    }
+
+    .searchbar {
+        position: relative;
+    }
+
+    .searchbar img {
+        width: 20px;
+        top: 7px;
+        right: 20px;
+        position: absolute;
+    }
+
+    .navbar1 .searchbar input {
+        width: 500px;
+        height: 35px;
+        color: black;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        padding: 10px 10px;
+        background: #eee;
+    }
+
+    .navbar1 .log {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar1 .log button {
+        width:100px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        margin: 0 20px 0 0;
+        border-radius: 5px;
+        background:  #3db166;
+    }
+
+    .navbar1 .log button a {
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    .navbar1 .profile {
+        width: 40px;
+        height: 40px;
+        margin:0 20px 0 0;
+        border-radius: 50%;
+        border: 2px solid #000;
+        background-color: #ffffff;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../lmages/icons/mailchimp.png);
+    }
+
+/* MAIN_BANNER */
+
+    .main_banner {
+        width: 100%;
+        height: 500px;
+        margin: 20px 0 0 0;
+        border-radius: 10px;
+        background: #ff0034;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../lmages/beuties-800x538.jpg);
+    }
+
+    .main_banner .info {
+        width: 350px;
+        height: 100px;
+        background: #3db166;
+        border-radius: 3px;
+        margin: 380px 10px 0 ;
+        padding: 5px 5px;
+        border-left: 20px solid #fff;
+    }
+
+    .main_banner .info h2 {
+        color: #fff;
+        font-size: 30px;
+
+    }
+
+/* MAIN */
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner_area {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        background: #fff;
+        margin: 20px 0 0;
+        padding: 10px 10px;
+    }
+
+    .area img {
+        width: 45px;
+        height: 40px;
+        margin: 60px 30px 0 ;
+    }
+
+    .area {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 10px;
+        /* background: #222233; */
+    }
+
+    .info_area h3 {
+        color: #192f59;
+        margin: 50px 0 0 0;
+    }
+
+    .info_area p {
+        color: #b7b7b7;
+        margin: 5px 0 0 0;
+        font-size: 18px;
+    }
+
+    .info_area a {
+        color: #545454;
+        margin: 25px 0 0 0;
+        font-weight: 700;
+        text-decoration: none;
+        transition: .5s ease;
+    }
+
+    .banner_after {
+        width: 100%;
+        height: 450px;
+        margin: 20px 0 0 0;
+        border-radius: 10px;
+        padding: 10px 10px;
+        display: flex;
+        background-color: #171722;
+    }
+
+    .image_after {
+        width: 50%;
+        height: 100%;
+        border-radius: 10px;
+        background: #ff0034;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../lmages/Scouts-Club-800x534.jpg);
+    }
+
+    .info_after {
+        width: 50%;
+        height: 100%;
+        padding: 20px 20px;
+    }
+
+    .info_after h1 {
+        color: #ffff;
+        margin: 40px 50px 0 ;
+        font-weight: 800;
+    }
+
+    .info_after h2 {
+        color: #3db166;
+        margin: 10px 50px;
+        font-size: 22px;
+    }
+
+    .info_after p {
+        color: #fff;
+        margin: 10px 50px;
+    }
+
+    .info_after button {
+        width:100px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        margin: 10px 50px;
+        border-radius: 5px;
+        background:  #3db166;
+    }
+
+    .info_after button a {
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    .banner_value {
+        width: 100%;
+        height: 500px;
+        padding: 10px 10px;
+        margin: 20px 0 0 0;
+        border-radius: 10px;
+        background: #171722;
+    }
+
+    .banner_value h1 {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 900;
+        margin:50px 450px 0;
+    }
+
+    .main_value {
+        display: flex;
+        margin: 10px 0 0 0;
+        width: 100%;
+        height: 370px;
+    }
+
+    .value {
+        width: 100%;
+        height: 100%;
+        /* padding: 10px 10px; */
+        /* background: #fff; */
+    }
+
+    .value img {
+        margin: 20px 20px 0;
+    }
+
+    .info_value h2 {
+        color: #fff;
+        margin: 25px 10px;
+    }
+
+    .info_value p {
+        color: #b7b7b7;
+        margin: 0 10px 10px;
+    }
+
+    .info_value a {
+        color: #3db166;
+        margin: 20px 10px;
+        text-decoration: none;
+    }
+
+/* FOOTER */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxholder {
+        width: 100%;
+        height: 270px;
+        margin: 20px 0 0;
+        display: flex;
+        border-radius: 10px;
+        background: #171722;
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border: 1px solid #eee;
+        background-position: center;
+    }
+
+    .box1 { background-image: url(../lmages/holder/DSC_0283.JPG);}
+    .box3{ background-image: url(../lmages/holder/DSC_0284.JPG);}
+    .box2 { height: 90%; background-image: url(../lmages/holder/DSC_0281.JPG);}
+    .box4 { height: 90%; background-image: url(../lmages/holder/DSC_0286.JPG);}
+
+    .footer_end {
+        width: 100%;
+        margin: 10px 0 0 ;
+        height: 270px;
+        display: flex;
+        background: #181818;
+    }
+
+    .end {
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+        /* background: #000; */
+    }
+
+    .boxer p {
+        color: #b7b7b7;
+        margin: 40px 0px 0;
+        font-size: 19px;
+    }
+    
+    .boxer h5 {
+        margin: 20px 0px 0;
+        color: #fff;
+    }
+
+    .boxer h4 {
+        margin: 20px 0px 0;
+        color: #fff;
+    }
+
+    .boxer hr {
+        color: #3db166;
+        margin: 10px 0 0;
+    }
+
+    .end h3 {
+        color: #fff;
+        margin: 40px 0px 0;
+        /* font-size: 19px; */
+    }
+
+    .end hr {
+        color: #3db166;
+        margin: 10px 0 ;
+    }
+
+    .end a {
+        color: #545454;
+        margin: 100px 0px 0;
+        text-decoration: none;
+        transition: .5s;
+    }
+
+    .end a:hover {
+        color: #fff;
+    }
+
+    .footer_end_tel {
+        width: 100%;
+        height: 63px;
+        padding: 20px 20px;
+        background: #363636;
+    }
+
+    .footer_end_tel h3 {
+        color: #fff;
+        /* font-size: 23px; */
+    }

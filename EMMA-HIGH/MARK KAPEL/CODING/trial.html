@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SAMPLE CALCULATOR</title>
+    <a href="index.js"></a>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background-color: #ecf0f3;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:yellowgreen;
+        }
+
+        .calculator {
+            box-shadow: 6px 6px 13px #fff;
+            box-sizing: 6px 6px 13px rgba(0, 0, .16);
+            border-radius: 28px;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(4, 66px);
+            background-color: rgb(14, 14, 110);
+        }
+
+        input {
+            grid-column: span 4;
+            height: 68px;
+            width: 230px;
+            box-shadow: 6px 6px 13px #fff;
+            box-sizing: 6px 6px 13px rgba(0, 0, 16);
+            background-color: #ecf0f3;
+            border: none;
+            border-radius: 28px;
+            color: rgba(26, 25, 25);
+            text-align: end;
+            margin: 40px 0px 30px 0px;
+            padding: 20px;
+            font-size: 150%;
+            margin-left: 14px;
+        }
+
+        button {
+            box-shadow: 6px 6px 13px #fff;
+            box-sizing: 6px 6px 13px rgb(0, 0, .16);
+            background-color: #ecf0f3;
+            border: none;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            font-weight: 20px;
+            font-size: 20px;
+        }
+
+        .equal {
+            width: 180px;
+            height: 70px;
+            box-shadow: inset 6px 6px 13px #fff;
+            box-sizing: 6px 6px 13px rgba(0, 0, 0, .6);
+            border-radius: 100px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.js"></a>
+    <a href="calculator.html">Trial</a>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="input" placeholder="0">
+            <button onclick="result">C</button>
+            <button onclick="result">DEL</button>
+            <button onclick="result">%</button>
+            <button onclick="result">/</button>
+            <button onclick="result">7</button>
+            <button onclick="result">8</button>
+            <button onclick="result">9</button>
+            <button onclick="result">*</button>
+            <button onclick="result">4</button>
+            <button onclick="result">5</button>
+            <button onclick="result">6</button>
+            <button onclick="result">-</button>
+            <button onclick="result">1</button>
+            <button onclick="result">2</button>
+            <button onclick="result">3</button>
+            <button onclick="result">.</button>
+            <button onclick="result">0</button>
+            <button class="equal" onclick="result">=</button>
+            <script src="index.js"></script>
+           
+
+        </div>
+    </div>
+</body>
+<script>
+    window.ducument.write("this my first work of doing javasript")
+</script>
+
+</html>

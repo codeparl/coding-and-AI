@@ -1,0 +1,401 @@
+h1 {
+    color: rgb(0, 255, 208);
+    transition: 4s;
+    font-size: 30px;
+    float: right;
+    justify-content: center;
+    text-align: center;
+}
+
+div a {
+    color: bisque;
+    font-size: 19px;
+    transition: 2px solid #bbb;
+    padding-bottom: 20px;
+    transform: uppercase;
+    position: relative;
+    right: -350px;
+    display: list-item;
+    list-style: none;
+}
+
+.list {
+    display: inline;
+}
+
+.jumbo {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 85vh;
+    background-image: url(images/images/hero-bg.jpg);
+}
+
+.container h1 {
+
+    text-align: center;
+    float: right;
+    padding: 5px;
+    display: flex;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    margin-left: 30px;
+}
+
+a.active,
+a:hover {
+    padding-top: 20px;
+    transition: .5s;
+    cursor: pointer;
+    transition: all 0s ease-in-out;
+}
+
+a:hover {
+    color: fuchsia;
+
+}
+
+.flakes {
+    color: green;
+    display: inline-block;
+}
+
+h1 {
+    float: right;
+}
+
+.links {
+    width: 45%;
+    display: inline-block;
+}
+
+.h1 {
+    width: 100%;
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.s {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    position: relative;
+    right: -200px;
+}
+
+h2 {
+    color: darkblue;
+    font-size: 35px;
+    font-style: italic;
+}
+
+h2:active,
+h2:hover {
+    border-bottom: 2px solid rgba(124, 0, 128, 0.836);
+    padding-top: 5px;
+    transition: .5s;
+    width: 400px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    color: rgba(124, 0, 128, 0.836);
+}
+
+.jk:active,
+.jk:hover {
+    border-bottom: 2px solid rgba(124, 0, 128, 0.836);
+    padding-top: 5px;
+    transition: .5s;
+    width: 280px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    color: rgba(124, 0, 128, 0.836);
+}
+
+
+.services .services-container {
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.tonk {
+    background-color: blueviolet;
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+.tonk:active,
+.tonk:hover {
+    background-color: darkorange;
+    color: green;
+}
+
+h3 {
+    color: blue;
+    font-size: 30px;
+    font-style: italic;
+}
+
+h3:active,
+h3:hover {
+    color: rgba(124, 0, 128, 0.836);
+    width: 270px;
+    padding-top: 5px;
+    border-bottom: 2px solid rgba(124, 0, 128, 0.836);
+    transition: .5s;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+.big {
+    color: blue;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.big:active,
+.big:hover {
+    color: rgba(124, 0, 128, 0.836);
+    width: 350px;
+    border-bottom: 2px solid rgba(124, 0, 128, 0.836);
+    transition: .5s;
+    transition: all 2s ease-in-out;
+}
+
+.hyug {
+    color: blue;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.hyug:active,
+.hyug:hover {
+    color: rgba(124, 0, 128, 0.836);
+    width: 280px;
+    border-bottom: 2px solid rgba(124, 0, 128, 0.836);
+    transition: .5s;
+    transition: all 2s ease-in-out;
+}
+
+#juba {
+    display: list-item;
+    width: 70px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: chartreuse;
+}
+
+.about-info {
+    color: black;
+    font-size: 30px;
+
+}
+
+#ainewoman {
+    font-size: 20px;
+}
+
+.col {
+    text-align: center;
+    width: 400px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 250px;
+    column-gap: 15px;
+    padding: 10px;
+}
+
+.aine {
+    margin-left: 110px;
+    box-shadow: 0 0 100px rgb(250, 19, 19);
+    padding: 4px;
+    width: 100%;
+    column-gap: 15px;
+    margin-right: 10px;
+    font-size: 19px;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid rgb(239, 19, 19);
+}
+
+h4 {
+    color: rgb(0, 128, 128);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.hyu {
+    color: green;
+}
+
+.fgh {
+    color: black;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.fgh:active,
+.fgh:hover {
+    padding-top: 20px;
+    transition: .5s;
+    cursor: pointer;
+    transition: all 1.5s ease-in-out;
+    color: aqua;
+    border-bottom: 2px solid purple;
+    width: 380px;
+}
+
+hr {
+    box-shadow: 0 0 400px rgb(0 0 0 / 10%);
+}
+
+.category img:hover {
+    transform: scale(0.8)rotate(-730deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgb(128, 19, 0);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+span {
+    color: blue;
+}
+
+h5 {
+    color: blue;
+    font-size: 35px;
+    font-style: italic;
+}
+
+h5:active,
+h5:hover {
+    border-bottom: 2px solid rgba(124, 0, 128, 0.836);
+    padding-top: 5px;
+    transition: .5s;
+    width: 240px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    color: rgba(124, 0, 128, 0.836);
+}
+
+.foo-box span {
+    background: rgb(255, 0, 0);
+    color: white;
+    display: inline-block;
+    padding: 0.3rem 3rem;
+    font-size: 0.8rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 99%, 7% 50%, 0% 0%);
+    padding-top: 15px;
+}
+
+input {
+    font-size: larger;
+}
+
+.src {
+    width: 30px;
+    height: 30px;
+}
+
+.stl {
+    list-style: none;
+    transition: 0.4s;
+    padding-bottom: 70px;
+    display: inline-block;
+    top: -450px;
+    margin: 0;
+    list-style-type: disc;
+    right: 200px;
+}
+
+.stl li {
+    padding: 10px;
+    font-size: 20px;
+    color: purple;
+}
+
+.mks {
+    display: flex;
+    padding: 10px;
+    margin-left: 500px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: -450px;
+
+}
+
+h6 {
+    color: darkblue;
+    font-size: 20px;
+    font-style: italic;
+    padding-right: 100px;
+    right: -50px;
+    left: 100px;
+    padding: -100px;
+    width: 100%;
+}
+
+.lks {
+    margin-right: 60px;
+}
+
+.gorm {
+    bottom: 400px;
+}
+
+footer {
+    box-shadow: inset 0 0 250px powderblue;
+}
+
+.hon:active,
+.hon:hover {
+    color: lime;
+    transition: 0.4s;
+    border-bottom: 2px solid rgb(51, 128, 0);
+    transform: scale(0.8)rotate(-05deg);
+    cursor: pointer;
+}
+
+.honj:active,
+.honj:hover {
+    color: lime;
+    transition: 0.4s;
+    border-bottom: 2px solid rgb(51, 128, 0);
+    transform: scale(0.8)rotate(-05deg);
+    cursor: pointer;
+    width: 150px;
+}
+
+.honja:active,
+.honja:hover {
+    color: lime;
+    transition: 0.4s;
+    border-bottom: 2px solid rgb(51, 128, 0);
+    transform: scale(0.8)rotate(-05deg);
+    cursor: pointer;
+    width: 80px;
+}

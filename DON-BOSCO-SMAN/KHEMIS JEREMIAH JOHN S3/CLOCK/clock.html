@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my clock</title>
+    <style>
+        .circle {
+            border: 50px solid rgba(15, 240, 15, 0.911);
+            background-color: pink;
+            border-radius: 50rem;
+            width: 700px;
+            height: 700px;
+            left: 200px;
+            bottom: -200px;
+            top: 100px;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .circle1 {
+            border: 2px solid red;
+            border-radius: 50rem;
+            background-color: rgba(244, 45, 45, 0.412);
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: -16%;
+            right: 15px;
+            left: 8px;
+            background-image: url(Penguins.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .vertical {
+            size: 10px;
+            color: blue;
+            font-size: 50px;
+
+        }
+
+        .nII {
+            position: relative;
+            left: 46%;
+            top: 20px;
+
+        }
+
+        .n6 {
+            position: relative;
+            left: 35%;
+            bottom: -630px;
+
+        }
+
+        .horizontal {
+            size: 10px;
+            color: blue;
+            font-size: 50px;
+        }
+
+        .n3 {
+            position: relative;
+            left: 92%;
+            top: 235px;
+        }
+
+        .n9 {
+            position: relative;
+            left: -2.98%;
+            top: 245px;
+        }
+
+        .minor {
+            size: 1px;
+            color: black;
+            font-size: 50px;
+
+        }
+    
+
+        .n1 {
+            position: relative;
+            left: 69%;
+            top: -63px;
+        }
+
+        .n2 {
+            position: relative;
+            left: 80%;
+            top: 49px;
+        }
+
+        .n4 {
+            position: relative;
+            left: 76%;
+            top: 320px;
+        }
+
+        .n5 {
+            position: relative;
+            left: 55%;
+            top: 450px;
+        }
+
+        .n7 {
+            position: relative;
+            left: -4%;
+            top: 450px;
+        }
+
+        .n8 {
+            position: relative;
+            left: -31%;
+            top: 320px;
+        }
+
+        .n10 {
+            position: relative;
+            left: -256px;
+            top: 50px;
+        }
+
+        .n11 {
+            position: relative;
+            left: -205px;
+            top: -60px;
+        }
+
+        .name {
+            position: relative;
+            left: 30px;
+            top: 10%;
+            color: black;
+        }
+
+        .c1 {
+            border: 10px solid red;
+            width: 2px;
+            height: 2px;
+            border-radius: 50rem;
+            position: relative;
+            left: 48%;
+            top: 46%;
+        }
+
+        .hr {
+            width: 13px;
+            height: 150px;
+            background-color: blue;
+            border-radius: 50px;
+            color: green;
+            top:15%;
+            left: 4px;
+            position: relative;
+            animation: infinite;
+            animation: hrclock 60s infinite none linear;
+            transform: rotate(-45deg);
+            transition: all 360ms ease-in;
+            transform: rotateX(360deg);
+            transform-origin: left;
+            transform: rotate(-360deg);
+            transform: translateX(-50%);
+
+        }
+
+        @keyframes hrclock {
+            0% {
+                transform: rotate(-90);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .hr1 {
+            width: 2px;
+            height: 220px;
+            background-color: black;
+            border-radius: 50px;
+            color: green;
+            top: -150px;
+            left: 0.3%;
+            position: relative;
+        }
+
+        .hr2 {
+            width: 8px;
+            height: 50%;
+            background-color: yellow;
+            border-radius: 50px;
+            color: red;
+            top: -82%;
+            left: 4px;
+            position: relative
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="circle">
+            <div class="vertical">
+                <span class="nII">XII</span>
+                <span class="n6">VI</span>
+            </div>
+            <div class="horizontal">
+                <span class="n3">III</span>
+                <span class="n9">IX</span>
+            </div>
+            <div class="minor">
+                <span class="n1">I</span>
+                <span class="n2">II</span>
+                <span class="n4">IV</span>
+                <span class="n5">V</span>
+                <span class="n7">VII</span>
+                <span class="n8">VIII</span>
+                <span class="n10">X</span>
+                <span class="n11">XI</span>
+            </div>
+            <div class="c1"></div>
+            <div>
+
+            </div>
+            <div class="circle1">
+                <div class="c1"></div>
+                <hr class="hr">
+                <hr class="hr1">
+                <hr class="hr2">
+
+            </div>
+            <div><span class="name"></span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

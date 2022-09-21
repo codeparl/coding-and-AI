@@ -1,0 +1,47 @@
+#wraper{
+
+}
+.cal{
+    border: 2px solid black;
+    width: 180.2pt;
+    height: 280pt;
+    border-radius: 7px;
+    padding: 5px;
+    padding-inline-end: 0;
+    padding-left: 3px;
+    margin: 50px;
+    background-color: rgb(19, 19, 20);
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    width: 35px;
+    font-size: 15px;
+   /* align-items: center;*/
+}
+
+input{
+    margin-top: 5px;
+    padding-bottom: 8pt;
+    padding-left: 18px;
+    width: 78%;
+    margin-left: 10px;
+    text-align: right;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+
+.arithmetic-sy{
+    display: inherit;
+    flex-direction: column;
+
+}
+.equal{
+    width: 70pt;
+}
+
+.on{
+    width:70pt ;
+}

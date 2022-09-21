@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>a simple wacth</title>
+    <style>
+        body {
+            background-color: rgb(12, 83, 83);
+        }
+
+        #outer {
+            border: 20px solid black;
+            width: 600px;
+            height: 700px;
+            border-radius: 50rem;
+            position: sticky;
+            left: 25%;
+            top: 50PX;
+        }
+
+        #container {
+            width: 600px;
+            height: 700px;
+            border-radius: 50rem;
+            background-color: rgb(4, 4, 56);
+
+
+
+        }
+
+        #subcontainer {
+            background-color: rgb(110, 110, 110);
+            width: 500px;
+            height: 600px;
+            border-radius: 50rem;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        .email {
+            position: absolute;
+            left: 170px;
+            top: 100px;
+            font-weight: bold;
+        }
+
+        .time {
+            font-size: 70px;
+            color: rgb(6, 6, 5);
+        }
+
+        .num12 {
+            position: relative;
+            left: 200px;
+        }
+
+        .num1 {
+            position: absolute;
+            left: 360px;
+            top: 45px;
+        }
+
+        .num2 {
+            position: absolute;
+            left: 420px;
+            top: 150px;
+        }
+
+        .num3 {
+            position: absolute;
+            left: 450px;
+            top: 270px;
+        }
+
+        .num4 {
+            position: absolute;
+            left: 420px;
+            top: 385px;
+        }
+
+        .num5 {
+            position: absolute;
+            left: 360px;
+            top: 470px;
+        }
+
+        .num6 {
+            position: absolute;
+            left: 233px;
+            top: 520px;
+        }
+
+        .num7 {
+            position: absolute;
+            left: 110px;
+            top: 470px;
+        }
+
+        .num8 {
+            position: absolute;
+            left: 30px;
+            top: 385px;
+
+        }
+
+        .num9 {
+            position: absolute;
+            left: 7px;
+            top: 270px;
+
+        }
+
+        .num10 {
+            position: absolute;
+            left: 7px;
+            top: 150px;
+        }
+
+        .num11 {
+            position: absolute;
+            left: 80px;
+            top: 45px;
+        }
+
+        .cyl {
+            border: solid black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50rem;
+            background-color: black;
+            position: absolute;
+            left: 230px;
+            top: 290px;
+            z-index:2;
+        }
+
+        .short {
+            width: 10px;
+            height: 120px;
+            border: 1px solid black;
+            border-radius: 50rem;
+            background-color: black;
+            position: relative;
+            left: 237px;
+            top: 100px;
+            bottom: 100px;
+            animation: longha 216000s infinite none linear;
+            transform-origin: bottom;
+        }
+
+        .longer {
+            width: 3px;
+            height: 220px;
+            border: 1px solid rgb(88, 3, 3);
+            border-radius: 50%;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            background-color: rgb(214, 2, 2);
+            position: absolute;
+            left: 240px;
+            top: 80px;
+            z-index: 1;
+            animation: longha 60s infinite none linear;
+            transform-origin: bottom;
+        }
+
+        .long {
+            width: 5px;
+            height: 170px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 50rem;
+            border-bottom-right-radius: 0%;
+            border-bottom-left-radius: 0px;
+            background-color: rgb(252, 250, 250);
+            position: absolute;
+            left: 240px;
+            top: 130px;
+            
+            animation: longha 3600s infinite none linear;
+            transform-origin: bottom;
+        }
+
+        @keyframes longha {
+            0% {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="container">
+            <div id="subcontainer">
+                <div id="numbers">
+                    <div class="time num12">
+                        <span>12</span>
+                    </div>
+                    <div class="time num1">
+                        <span>1</span>
+                    </div>
+                    <div class="time num2">
+                        <span>2</span>
+                    </div>
+                    <div class="time num3">
+                        <span>3</span>
+                    </div>
+                    <div class="time num4">
+                        <span>4</span>
+                    </div>
+                    <div class="time num5">
+                        <span>5</span>
+                    </div>
+                    <div class="time num6">
+                        <span>6</span>
+                    </div>
+                    <div class="time num11">
+                        <span>11</span>
+                    </div>
+                    <div class="time num10">
+                        <span>10</span>
+                    </div>
+                    <div class="time num9">
+                        <span>9</span>
+                    </div>
+                    <div class="time num8">
+                        <span>8</span>
+                    </div>
+                    <div class="time num7">
+                        <span>7</span>
+                    </div>
+                    <div class="cyl"></div>
+                    <div class="short"></div>
+                    <div class="longer"></div>
+                    <div class="long"></div>
+                    <div><span class="email">quarsnald@gmail.com</span></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

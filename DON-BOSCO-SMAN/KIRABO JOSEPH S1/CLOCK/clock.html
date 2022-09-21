@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        body{
+            background-color: rgb(18, 18, 52);
+        }
+        .frame{
+            position: relative;
+            left: 22rem;
+            top: 23rem;
+            width: 420px;
+            height: 420px;
+            border: 3px solid crimson;
+            background-color: cyan;
+        }
+        .box{
+            position: relative;
+            left: 18px;
+            top: 20px;
+            width: 370px;
+            height: 370px;
+            background-color: chocolate;
+            border: 3px solid crimson;
+        }
+        .twelve{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 9.8rem;
+            top: -0.4rem;
+        }
+        .eleven{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 4rem;
+            bottom: 3.7rem;
+        }
+        .ten{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            bottom: 3rem;
+        }
+        .nine{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            bottom: 1rem;
+        }
+        .eight{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            top: 1rem;
+        }
+        .seven{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 5rem;
+            top: 2.8rem;
+        }
+        .six{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 10.5rem;
+            top: -0.7rem;
+        }
+        .numbers{
+            color: red;
+        }
+        .five{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 16.3rem;
+            top: -4rem;
+        }
+        .four{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 21.6rem;
+            top: -13rem;
+        }
+        h2{
+            position: relative;
+            bottom: 24rem;
+            left: 6rem;
+        }
+        .three{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 21.6rem;
+            top: -21.7rem;
+        }
+        .two{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 21.6rem;
+            top: -30.6rem;
+        }
+        .one{
+            position: relative;
+            font-size: 3em;
+            color: aliceblue;
+            left: 16.3rem;
+            top: -37.9rem;
+        }
+        .dot{
+            position: relative;
+            width: 25px;
+            height: 25px;
+            border-radius: 50rem;
+            background-color: aliceblue;
+            top: 10rem;
+            left: 10.2rem;
+            margin-bottom: -2rem;
+            z-index: 2;
+        }
+        .second{
+            position: relative;
+            height: 4px;
+            width: 130px;
+            background-color: crimson;
+            border-radius: 10px;
+            left: 2.9rem;
+            top: 10.9rem;
+            animation: second 60s infinite linear;
+            transform-origin: right;
+            transform: rotate(90deg);
+        }
+        @keyframes second{
+            from{
+                transform: rotate(90deg);
+            }
+            to{
+                transform: rotate(450deg);
+            }
+        }
+        .minute{
+            position: relative;
+            height: 5px;
+            width: 120px;
+            background-color: wheat;
+            border-radius: 10px;
+            left: 3.4rem;
+            top: 10.9rem;
+            animation: minute 360s infinite linear;
+            transform-origin: right;
+            transform: rotate(90deg);
+        }
+        @keyframes minute{
+            from{
+                transform: rotate(90deg);
+            }
+            to{
+                transform: rotate(450deg);
+            }
+        }
+        .hour{
+            position: relative;
+            height: 5px;
+            width: 90px;
+            background-color: black;
+            border-radius: 10px;
+            left: 5.4rem;
+            top: 10.9rem;
+            animation: hour 3600s infinite linear;
+            transform-origin: right;
+            transform: rotate(90deg);
+        }
+        @keyframes hour{
+            from{
+                transform: rotate(90deg);
+            }
+            to{
+                transform: rotate(450deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="box">
+        <div class="dot"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+        <div class="hour"></div>
+        <div class="numbers">
+        <div class="twelve">12</div>
+        <div class="eleven">11</div>
+        <div class="ten">10</div>
+        <div class="nine">9</div>
+        <div class="eight">8</div>
+        <div class="seven">7</div>
+        <div class="six">6</div>
+        <div class="five">5</div>
+        <div class="four">4</div>
+        <div class="three">3</div>
+        <div class="two">2</div>
+        <div class="one">1</div>
+        </div>
+       <h2>Coded by Jose</h2> 
+    </div>
+    </div>
+</body>
+</html> 

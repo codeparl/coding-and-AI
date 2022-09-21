@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE</title>
+    <style>
+        main {
+            width: 80%;
+            height: 1930px;
+            border: solid black 2px;
+            box-sizing: border-box;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-image: url('img/snake.jpg');
+            color: yellowgreen;
+        }
+
+        .logo {
+            width: 90%;
+            margin-left: 5%;
+            border: solid black 2px;
+            margin-right: 5%;
+            margin-top: 3%;
+            height: 250px;
+            border-radius: 20px;
+
+
+        }
+
+        .links {
+            width: 90%;
+            margin-left: 5%;
+            border: solid black 2px;
+            margin-right: 5%;
+            margin-top: 3%;
+            height: 100px;
+            border-radius: 20px;
+        }
+
+        .content {
+            width: 90%;
+            margin-left: 5%;
+            border: solid black 2px;
+            margin-right: 5%;
+            margin-top: 3%;
+            height: 420px;
+            border-radius: 20px;
+        }
+
+        .footer {
+            width: 90%;
+            margin-left: 5%;
+            border: solid black 2px;
+            margin-right: 5%;
+            margin-top: 3%;
+            height: 250px;
+            border-radius: 20px;
+        }
+
+        button {
+            width: 700px;
+            height: 80px;
+            display: block;
+            margin-top: 5%;
+            margin-left: 15%;
+            margin-right: 15%;
+            border-radius: 10%;
+            font-size: 30px;
+        }
+
+        .section {
+            width: 90%;
+            margin-left: 5%;
+            border: solid black 2px;
+            margin-right: 5%;
+            margin-top: 3%;
+            height: 690px;
+            border-radius: 20px;
+
+        }
+
+        .first {
+            width: 26.5%;
+            margin-left: 2%;
+            border: solid black 2px;
+            margin-right: 2%;
+            margin-top: 3%;
+            height: 600px;
+            border-radius: 20px;
+            display: inline-block;
+            background-image: url('img/R\ \(1\).jpg');
+
+
+
+        }
+
+        .sec {
+            width: 26.5%;
+            margin-left: 2%;
+            border: solid black 2px;
+            margin-right: 5%;
+            margin-top: 3%;
+            height: 600px;
+            border-radius: 20px;
+            display: inline-block;
+            background-image: url('img/share.jpg');
+
+        }
+
+        .thd {
+            width: 26.5%;
+            margin-left: 2%;
+            border: solid black 2px;
+            margin-right: 5%;
+            margin-top: 3%;
+            height: 600px;
+            border-radius: 20px;
+            display: inline-block;
+            background-image: url('img/help.png');
+            background-image: no-repeat;
+
+        }
+
+        .img {
+            width: 100%;
+            height: 250px;
+            border-radius: 20px;
+
+        }
+
+        .about {
+            width: 31%;
+            height: 90px;
+            background-image: url('img/R\ \(1\).jpg');
+            box-sizing: border-box;
+            display: inline-block;
+            border-radius: 20px;
+            margin: 5px;
+            text-align: center;
+            transition: all 0s;
+        }
+
+        .share {
+            width: 31%;
+            height: 90px;
+            background-image: url('img/share.jpg');
+            box-sizing: border-box;
+            display: inline-block;
+            border-radius: 20px;
+            margin: 5px;
+            text-align: center;
+
+        }
+
+        .help {
+            width: 31%;
+            height: 90px;
+            background-image: url('img/help.png');
+            box-sizing: border-box;
+            display: inline-block;
+            border-radius: 20px;
+            margin: 5px;
+            text-align: center;
+
+        }
+
+        .snd {
+            width: 100px;
+            height: 35px;
+            font-size: 10;
+            position: absolute;
+            top: 281%;
+            right: 5%;
+            transition: all 0s;
+        }
+
+        input {
+            width: 600px;
+            height: 30px;
+        }
+
+        .snd:hover {
+            background-color: lightseagreen;
+            color: greenyellow;
+        }
+
+        .ft {
+            width: 90%;
+            height: 150px;
+            border: solid black 2px;
+            box-sizing: border-box;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .lst {
+            width: 90%;
+            height: 50px;
+            border: solid black 2px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 2px;
+            text-align: center;
+        }
+
+        .about:hover {
+            background-color: blue;
+            color: green;
+        }
+
+        .png {
+            width: 35px;
+            height: 35px;
+        }
+
+        .rate {
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 280%;
+            right: 50%;
+        }
+        .tt{
+            width:40px ;
+            height:30px ;
+        }
+        .td{
+            width:10px ;
+            height:10px ;
+        }
+        .ed{
+            width:100% ;
+            height:180px ;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="logo"><img src="img/R (1).jpg" class="img" alt=""></div>
+            <nav class="links">
+                <button class="about"><a href="#ABOUT">ABOUT</a></button>
+                <button class="share"><a href="#SHARE">SHARE</a></button>
+                <button class="help"><a href="#HELP">HELP</a></button>
+            </nav>
+        </header>
+        <section class="content">
+            <div class="">
+                <button><a href="Tutorial.html">Tutorial</a></button>
+                <button><a href="Levels.html">Levels</a></button>
+                <button><a href="Options.html">Options</a></button>
+            </div>
+
+        </section>
+        <div class="section">
+            <div id="ABOUT" class="first">
+                <h1>ABOUT THE GAME</h1>
+                <p>This game was developed on 5th/07/22 by a young developer called Mwazike Samuel SSajjabbi.He is 16yrs old, lives in Uganda.</p>
+                <img src="img/windows.jpg" alt="" class="ed">
+                <span>MWAZIKE SAMUEL SSAJJABBI</span>
+                <P>This game name "classic snake adventures " was naked from the name of my favorite snake game on my phone which was called Snake Adventures.</P>
+                <p>This game will be upgraded incase of any improvement, So I humbly request you not to unstall this game incase of any upgrading.</p>
+            </div>
+            <div class="sec" id="SHARE">
+                <h1>SHARE THE GAME</h1>
+                <p><img src="img/whatsapp.png" alt="" class="png"><a href="htpps:www.whatsup.com">WHATSUP</a></p>
+                <p><img src="img/twitter.png" alt="" class="png"><a href="www.twitter.com">TWITTER</a></p>
+                <p><img src="img/ig.jpg" alt="" class="png"><a href="www.instagram.com">INSTAGRAM</a></p>
+                <p><img src="img/in.png" alt="" class="png"><a href="www.linkedin.com">LINKEDIN</a></p>
+                <p><img src="img/dex.png" alt="" class="png"><a href="www.xender.com">XENDER</a></p>
+                <p><img src="img/gmail.png" alt="" class="png"><a href="www.gmail.com">GMAIL</a></p>
+                <p><img src="img/telegram.jpg" alt="" class="png"><a href="www.telegram.com">TELEGRAM</a></p>
+                <p><img src="img/spchat.png" alt="" class="png"><a href="www.snapchart.com">SNAPCHAT</a></p>
+                <p><img src="img/facebook.jpg" alt="" class="png"><a href="www.facebook.com">FACEBOOK</a></p>
+
+            </div>
+            <div class="thd" id="HELP">
+                <h1>
+                    <p>GET ANY HELP HERE</p>
+                </h1>
+                <p><img src="img/up.png" alt="" class="tt">/ <img src="img/down.png" alt="" class="tt">Move Up/ Down</p>
+                <p> <img src="img/left.png" alt=""  class="tt">/ <img src="img/right.jpg" alt=""  class="tt">Move Left/ Right </p>
+                <p> <img src="img/windows.jpg" alt="" class="tt">Quit Game </p>
+                <p> <img src="img/restart.png" alt="" class="tt">Refresh the Game </p>
+                <p><img src="img/pause.png" alt="" class="tt">Pause</p>
+                <p>For more information<br>Contact us,</p>
+                <p><img src="img/dot.png" alt="" class="td">256708090442</p>
+                <p><img src="img/dot.png" alt="" class="td">256783841069</p>
+                <p><img src="img/dot.png" alt="" class="td">mwazikesamuel15@gmail.com</p>
+                <p><img src="img/dot.png" alt="" class="td">mwazikesamuel0955linkedin.com</p>
+                <p><img src="img/dot.png" alt="" class="td">Kampala'Uganda'</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="ft">
+                <p> <img src="img/settings.png" alt="" class="png"> SETTINGS </p>RATE US <img src="img/rate.png" alt=""
+                    class="rate">
+                </p>
+                </p>
+                <p class="dmn">
+
+                    COMMENT <input type="text"> <button class="snd">SEND</button>
+                </p>
+            </div>
+            <div class="lst">
+                <p>©copyright reserved2022</p>
+            </div>
+
+        </footer>
+    </main>
+</body>
+
+</html>

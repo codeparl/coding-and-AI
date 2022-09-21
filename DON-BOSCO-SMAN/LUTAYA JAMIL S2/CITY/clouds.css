@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    width: 100%;
+    height: 100vh;
+    background: rgb(180, 170, 170, .5);
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+body{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(180deg, rgba(8, 121, 192, .6), rgba(230, 230, 5, 0.8));
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 200px #ffff00;
+    transition: all 120s ease;
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    box-shadow: 200px 200px 20px #ffe100;
+}
+
+.city-wrapper{
+    width: 10000vw;
+    height: 50vh;
+    display: flex;
+    align-items:flex-end;
+    justify-content: stretch;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    animation: road-move 120s infinite linear forwards;
+    transition: all 120s ease;
+}
+
+@keyframes road-move {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-1000vw);
+    }
+}
+
+.city{
+    display: inherit;
+    justify-content: space-evenly;
+    align-items: inherit;
+    opacity: .9;
+}
+
+.house-1{
+    width: 140px;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #623f3f;
+}
+
+.house-1 .window{
+    background: #fff;
+    width: 28px;
+    height: 30px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.house-1 .window::after{
+    content: "";
+    background: #fff;
+    width: 28px;
+    height: 30px;
+    display: block;
+    position: relative;     
+    left: 45px; 
+}
+
+.house-2{
+    width: 100px;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #605151;
+}
+
+.house-2 .window{
+    width: 14.89px;
+    height: 20px;
+    background: #a29b9b;
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+    position: relative;
+}
+
+.house-2 .window::after{
+    content: "";
+    background: #a29b9b;
+    width: inherit;
+    height: 20px;
+    display: block;
+    position: relative;     
+    left: 26px; 
+}
+
+.house-2 .window::before{
+    content: "";
+    background: #a29b9b;
+    width: inherit;
+    height: 20px;
+    display: block;
+    position: absolute;     
+    left: 50px;
+}
+
+.house-3{
+    width: 92.68px;
+    height: 430px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #251e1e;
+}
+
+.house-3 .window{
+    width: 12.89px;
+    height: 20px;
+    background: #cab9b9;
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+    position: relative;
+}
+
+.house-3 .window::after{
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    position: absolute;
+    left: 20px;
+}
+
+.house-3 .window::before{
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    position: absolute;
+    left: 40px;
+}
+
+.house-4{
+    width: 180px;
+    height: 130px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: rgb(223, 86, 106);
+    position: relative;
+}
+
+.house-4 .window{
+    width: 12.89px;
+    height: 20px;
+    background: #cab9b9;
+    margin-left: 1.2rem;
+    margin-top: 1rem; 
+}
+
+ .house-4 .window::after{
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    position: absolute;
+    left: 80px;
+} 
+
+.house-4 .window::before{
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    position: absolute;
+    left: 150px;
+} 
+
+.house-5{
+    width: 380px;
+    height: 230px;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgb(16, 0, 0);
+    position: relative;
+    padding-bottom: 1.2rem;
+}
+
+
+.house-5 .window{
+    width: 50px;
+    height: 80px;
+    background: #ffffff;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.road-wrapper{
+    width: 10000vw;
+    height: 362px;
+    background-color: #623f3f;
+    left: 0;
+    position: absolute;
+    bottom: -100%;
+    display: flex;
+    justify-content: space-between;
+    animation: road-move 120s infinite linear forwards;
+    transition: all 120s ease;
+}
+
+.road-cross{
+    width: 100px;
+    height: 20px;
+    background-color: #fff;
+    margin-top: 10rem;
+}
+
+.car{
+    border-bottom: 180px solid #a06666;
+    border-right: 80px solid transparent;
+    width: 400px;
+    position: absolute;
+    bottom: -80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px !important;
+    color: #fff;
+}
+.car h2{
+    position: absolute;
+    bottom: -122%;
+    left: 35%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    cursor: none;
+}
+
+.car::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #a06666;
+    display: block;
+    position: relative;
+    left: 95%;
+    top: 180px;
+    border-radius: 5px;
+}
+
+.window-car-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 2px;
+    position: absolute;
+    bottom: -55%;
+    left: 5%;
+}
+
+.window-car{
+    width: 70px;
+    height: 70px;
+    background: #605151;
+    z-index: 2;
+    transform: scale(.8);
+    border-radius: 10px;
+}
+.window-car-1{
+    border-radius: 10px 0 0 10px;
+}
+
+.tyre-wrapper{
+    background: #ffe100;
+    width: 330px;
+    height: 2px;
+    position: absolute;
+    bottom: -180%;
+    left: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+
+.tyre-wrapper .tyre{
+    background: #000000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.tyre::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    top: 22px;
+    left: 22px;
+    animation: rotate-tyre 1s infinite 0s linear forwards;
+}
+
+.tyre::before{
+    content: "";
+    width: 15px;
+    height: 3px;
+    background: #251e1e;
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 22px;
+    z-index: 3;
+    animation: rotate-tyre 1s infinite 0s linear forwards;
+}
+
+.tyre{
+    transition: all 1s ease;
+}
+
+@keyframes rotate-tyre {
+    from{
+        transform: rotate(0);
+        
+    }
+     to{
+        transform: rotate(360deg);
+     }
+}

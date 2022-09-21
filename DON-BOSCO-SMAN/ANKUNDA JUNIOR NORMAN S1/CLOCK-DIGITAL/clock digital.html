@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>clock</title>
+    <style>
+        body {
+            background-color: green;
+        }
+
+        .clock {
+            border: 3px solid red;
+            border-radius: 50rem;
+            width: 800px;
+            height: 800px;
+            margin-right: 4rem;
+            margin-left: 5rem;
+            margin-bottom: 6rem;
+            background-color: gold;
+        }
+
+        .sub {
+            border: 2px solid red;
+            border-radius: 50rem;
+            width: 730px;
+            height: 730px;
+            position: relative;
+            margin-bottom: 6rem;
+            margin-right: 4rem;
+            margin-left: 5rem;
+            top: -54rem;
+            left: 2rem;
+            background-color: gray;
+
+        }
+
+        .twelve {
+            font-size: 6em;
+            position: relative;
+            top: -184.5rem;
+            left: 27rem;
+            color: cyan;
+        }
+
+        .one {
+            font-size: 6em;
+            position: relative;
+            top: -175rem;
+            left: 39rem;
+            color: chocolate;
+        }
+
+        .three {
+            font-size: 6em;
+            position: relative;
+            top: -93rem;
+            left: 50rem;
+            color: blueviolet;
+        }
+
+        .four {
+            font-size: 6em;
+            position: relative;
+            top: -90rem;
+            left: 47rem;
+            color: green;
+        }
+
+        .five {
+            font-size: 6em;
+            position: relative;
+            top: -90rem;
+            left: 40rem;
+            color: darkmagenta;
+        }
+
+        .six {
+            font-size: 6em;
+            position: relative;
+            top: -94rem;
+            left: 28rem;
+            color: cyan;
+        }
+
+        .seven {
+            font-size: 6em;
+            position: relative;
+            top: -104rem;
+            left: 17rem;
+            color: chocolate;
+        }
+
+        .eight {
+            font-size: 6em;
+            position: relative;
+            top: -118rem;
+            left: 10rem;
+            color: darksalmon;
+        }
+
+        .nine {
+            font-size: 6em;
+            position: relative;
+            top: -135rem;
+            left: 7rem;
+            color: blueviolet;
+        }
+
+        .ten {
+            font-size: 6em;
+            position: relative;
+            top: -152rem;
+            left: 9rem;
+            color: darkmagenta;
+        }
+
+        .eleven {
+            font-size: 6em;
+            position: relative;
+            top: -166rem;
+            left: 16rem;
+            color: green;
+        }
+
+        .two {
+            font-size: 6em;
+            position: relative;
+            top: -97rem;
+            left: 47rem;
+            color: darksalmon;
+        }
+
+        .longha {
+            border: 2.5px solid red;
+            position: relative;
+            width: 190px;
+            transform-origin: left;
+           transition:rotate(90deg);
+            animation: longha 360s infinite linear;
+            left: 31rem;
+            top: -96.5rem;
+        }
+
+            @keyframes longha {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        
+           
+            .second{
+            border: 1.5px solid black;
+            position: relative;
+            width: 230px;
+            transform-origin: left;
+           transition:rotate(90deg);
+            animation: second 60s infinite linear;
+            left: 31rem;
+            top: -167rem;
+        }
+
+            @keyframes second{
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            .hour{
+            border: 3px solid orange;
+            position: relative;
+            width: 100px;
+            transform-origin: left;
+           transition:rotate(90deg);
+            animation: hour 3600s infinite linear;
+            left: 31rem;
+            top: -167.4rem;
+        }
+
+            @keyframes hour{
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        .dot {
+            border: 1px solid black;
+            background-color: red;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 50rem;
+            top: -2555px;
+            left: 490px;
+        }
+        .pig{
+            color: red;
+            top: -180rem;
+            left: 20rem;
+            position: relative;
+            padding: 20px;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div class="clock"></div>
+        <div class="sub"></div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="longha"></div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+        <div class="nine">9</div>
+        <div class="ten">10</div>
+        <div class="eleven">11</div>
+        <div class="one">1</div>
+        <div class="dot">.</div>
+        <div class="twelve">12</div>
+        <div class="second"></div>
+        <div class="hour"></div>
+        <h2 class="pig">Coded by Junior</h2>
+    </div>
+</body>
+
+</html>

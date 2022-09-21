@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skylegend</title>
+    <style>
+        .main {
+            width: 1000px;
+            height: 500px;
+            background-color: skyblue;
+            border: 10px ridge black;
+            position: relative;
+            top: 80px;
+            margin: none;
+            padding-left: 500px;
+        }
+
+        .bird {
+            width: 50px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            top: 410px;
+            left: -50px;
+            transition: all 5s;
+        }
+
+        :hover .bird {
+            top: 10px;
+        }
+
+        .wing {
+            width: 15px;
+            height: 10px;
+            border-radius: 0 0 50% 0;
+            background-color: orangered;
+            position: relative;
+            left: 15px;
+            top: 10px;
+        }
+
+        .obs1 {
+            width: 20px;
+            height: 400px;
+            background-color: rgb(0, 255, 42);
+            position: relative;
+            animation-name: mine;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            left: 10px;
+
+        }
+        @keyframes mine{
+            0%{left: 0px; top: 0px;border-radius: 0
+                0 0 0;}
+            25%{left: 3000px; top: 0px;border-radius: 50% 0 0 0;}
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+        <div class="main">
+            <div class="bird">
+                <div class="wing"><a href="face.html">a</a></div>
+            </div>
+            <div class="obs1"></div>
+            <div class="obs2"></div>
+            <div class="obs3"></div>
+            <div class="obs4"></div>
+            <div class="obs5"></div>
+            <div class="obs6"></div>
+            <div class="obs7"></div>
+            <div class="obs8"></div>
+            <div class="obs9"></div>
+            <div class="obs10"></div>
+            <div class="obs11"></div>
+            <div class="obs12"></div>
+            <div class="obs13"></div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            background-attachment: fixed;
+            background-color: transparent white;
+        }
+
+        header {
+            background-color: dodgerblue;
+            padding: 5px;
+            display: flex;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .links{
+            display: flex;
+            padding: 0;
+            text-decoration: none;
+            margin-left: 60%;
+
+        
+
+        }
+        .container{
+            width: 100px;
+            height: 100px;
+            background: #222;
+        }
+        .swip{
+            width: 80%;
+            height: fit-content;
+
+        }
+        .sl img{
+            width: 100%;
+
+        }
+        .swip .swiper-button-prev, .swiper .swiper-button-next{
+            color: #fff;
+        }
+        .swip .swiper-pagination-bullet-active{
+            background: #fff;
+        }
+    </STYle>
+</head>
+
+<body>
+    <div class="e">
+        <nav>
+
+            <header>
+
+                <div class="fg">
+                    <a class="we" href="index.html">EMMA HIGH SCHOOL</a>
+                </div>
+
+                <div class="links">
+                    <ul class="ul">
+                        <li class="li">
+                            <a class="nav" href="">
+                                CO.CURILCULAR
+                            </a>
+                        </li>
+
+
+                        <li class="li">
+                        <li class="li">
+                            <a class="nav" href="">
+                                ACADEMICS
+                            </a>
+                        </li>|
+                        <li class="li">
+                            <a class="nav" href="http://www.emmahigh.sc.ug"> PLATFORM
+                        <li class="li">
+                            <a class="nav" href="#CONTACTS">
+                                SOCIAL LIFE
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </header>
+            <div class="img">EMMA HIGH SCHOOL
+                <center>
+                    <button class="b">WELCOME</button>
+                </center>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class=" swip">
+            <div class="wra">
+                <div class="sl"><img src="../images/buge.jpeg"></div>
+                <div class="sl"><img src="../images/emm.jpeg"></div>
+                <div class="sl"><img src="../images/dif.jpeg"></div>
+                <div class="sl"><img src="../images/food.jpeg"></div>
+                <div class="sl"><img src="../images/ter.jpeg"></div>
+                <div class="sl"><img src="../images/ko.jpeg"></div>
+
+            </div>
+            <div class="swiper"></div>
+            <div class="swiper-buton-prev"></div>
+            <div class="swiper-buton-next"></div>
+            <div class="as"></div>
+        </div>
+    </div>
+    <script src=" images/hm.jpeg">
+        </script>
+        <script>
+            const swiper=new swiper('.swiper', {
+                autoplay:{
+                    delay:3000,
+                    disableonInteraction:false
+                }
+                loop:true,
+                pagination: {
+                    el: 'swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation:{
+                    nextE1: 'swiper-button-next',
+                    prevE1: 'swiper-button-prev',
+                },
+            });
+        </script>
+</body>
+
+</html>

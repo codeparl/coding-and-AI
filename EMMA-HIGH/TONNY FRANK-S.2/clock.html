@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>clock</title>
+        <style>
+          .all{
+              
+          }
+          #clocked{
+              background-color: dodgerblue;
+          }
+
+
+
+
+
+
+            #clock {
+                background: goldenrod;
+                border: 15px solid #222;
+                border-radius: 50%;
+                position: relative;
+                width: 350px;
+                height: 350px;
+                margin: auto;
+            }
+
+            ul {
+                list-style: none;
+                top: 0;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                text-align: center;
+            }
+
+            li {
+                position: absolute;
+                transform-origin: 50% 100%;
+                height: 160px;
+            }
+
+            .hours {
+                left: 120px;
+                font-size: 23.3333333333px;
+                letter-spacing: -1.6px;
+                line-height: 45px;
+            }
+
+            .hours li {
+                width: 80px;
+            }
+
+            .hours span {
+                display: block;
+            }
+
+            /* The following code has helped to design the 1 number*/
+            .hours li:nth-of-type(1) {
+                transform: rotate(30deg);
+            }
+
+            .hours li:nth-of-type(1) span {
+                transform: rotate(-30deg);
+            }
+
+            .hours li:nth-of-type(2) {
+                transform: rotate(60deg);
+            }
+
+            .hours li:nth-of-type(2) span {
+                transform: rotate(-60deg);
+            }
+
+            /* The following code has helped to design the 3 number*/
+            .hours li:nth-of-type(3) {
+                transform: rotate(90deg);
+            }
+
+            .hours li:nth-of-type(3) span {
+                transform: rotate(-90deg);
+            }
+
+            .hours li:nth-of-type(4) {
+                transform: rotate(120deg);
+            }
+
+            .hours li:nth-of-type(4) span {
+                transform: rotate(-120deg);
+            }
+
+            /* The following code has helped to design the 5 number*/
+            .hours li:nth-of-type(5) {
+                transform: rotate(150deg);
+            }
+
+            .hours li:nth-of-type(5) span {
+                transform: rotate(-150deg);
+            }
+
+            .hours li:nth-of-type(6) {
+                transform: rotate(180deg);
+            }
+
+            .hours li:nth-of-type(6) span {
+                transform: rotate(-180deg);
+            }
+
+            /* The following code has helped to design the 7 number*/
+            .hours li:nth-of-type(7) {
+                transform: rotate(210deg);
+            }
+
+            .hours li:nth-of-type(7) span {
+                transform: rotate(-210deg);
+            }
+
+            .hours li:nth-of-type(8) {
+                transform: rotate(240deg);
+            }
+
+            .hours li:nth-of-type(8) span {
+                transform: rotate(-240deg);
+            }
+
+            /* The following code has helped to design the 9 number*/
+            .hours li:nth-of-type(9) {
+                transform: rotate(270deg);
+            }
+
+            .hours li:nth-of-type(9) span {
+                transform: rotate(-270deg);
+            }
+
+            .hours li:nth-of-type(10) {
+                transform: rotate(300deg);
+            }
+
+            .hours li:nth-of-type(10) span {
+                transform: rotate(-300deg);
+            }
+
+            /* The following code has helped to design the 11 number*/
+            .hours li:nth-of-type(11) {
+                transform: rotate(330deg);
+            }
+
+            .hours li:nth-of-type(11) span {
+                transform: rotate(-330deg);
+            }
+
+            .hours li:nth-of-type(12) {
+                transform: rotate(360deg);
+            }
+
+            .hours li:nth-of-type(12) span {
+                transform: rotate(-360deg);
+            }
+
+            .hr-wrapper,
+            .min-wrapper,
+            .sec-wrapper {
+                position: absolute;
+                width: 320px;
+                height: 320px;
+            }
+
+            .hand {
+                position: absolute;
+                bottom: 50%;
+                transform-origin: 50% 100%;
+            }
+
+            .hr {
+                background: #222;
+                left: 152px;
+                width: 13px;
+                height: 105px;
+                border-radius: 10px;
+                animation: rotateHand 43200s linear infinite;
+            }
+
+            .hr:after {
+                background: blue;
+                border-radius: 50%;
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -8px;
+                width: 13px;
+                height: 16px;
+            }
+
+            .min {
+                background: red;
+                left: 155px;
+                width: 9px;
+                height: 125px;
+                border-radius: 8px;
+                animation: rotateHand 3600s linear infinite;
+            }
+
+            .min:after {
+                background: #222;
+                border-radius: 50%;
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -8px;
+                width: 9px;
+                height: 16px;
+            }
+
+            .sec {
+                background: white;
+                left: 156.5px;
+                width: 5px;
+                height: 132px;
+                border-radius: 8px;
+                animation: rotateHand 60s linear infinite;
+            }
+
+            .sec:after {
+                background: #d00;
+                border-radius: 50%;
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -3.5px;
+                width: 5px;
+                height: 7px;
+            }
+
+            @keyframes rotateHand {
+                to {
+                    transform: rotate(1turn);
+                }
+            }
+
+            * {
+                box-sizing: border-box;
+
+            }
+
+            #calculator {
+                background: black;
+                width: 320px;
+                height: 430px;
+                border-radius: 15px;
+
+            }
+
+            #display {
+                margin: auto;
+                text-align: center;
+                padding: 10px;
+                width: 100%;
+
+            }
+
+            #data-input {
+                width: 100%;
+                height: 55px;
+                font-size: 38px;
+                border-radius: 10px;
+            }
+
+            .line {
+                width: 100%;
+                padding: 3px;
+                text-align: center;
+                margin: auto;
+            }
+
+            button {
+                width: 60px;
+                height: 60px;
+                padding: 4px;
+                background-color: dodgerblue;
+
+        
+            }
+            body{
+                background-color:SILVER;
+                display: inline inline-block;
+               
+            margin: auto;
+            width: 100%;
+            }
+            .clocked{
+                background-color: dodgerblue;
+            }
+            * {
+            box-sizing: border-box;
+
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 50rem;
+            display: inline-block;
+            margin-left: 10px;
+
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .face-wrapper {
+            margin-top: 20px;
+
+        }
+
+        .face {
+            background-color: yellow;
+            position: relative;
+        }
+
+        .hidden {
+            display: none;
+
+        }
+
+        .eye {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 30%;
+            background-color: white;
+            z-index: 4;
+
+        }
+
+        .mouth {
+            width: 90px;
+            height: 90px;
+            background-color: black;
+            position: relative;
+            top: 35%;
+            left: 15%;
+
+        }
+
+        .n-border {
+            border: 0;
+        }
+
+        .lip {
+            position: absolute;
+            background-color: yellow;
+            z-index: 2;
+            width: 90px;
+            height: 90px;
+
+            top:25%;
+            left:15%;
+
+        }
+
+
+
+        .eye.left {
+            left: 20%;
+
+
+        }
+
+        .eye.right {
+            right: 20%;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        #calculator {
+            background-color:black;
+            width: 400px;
+            height: 550px;
+        }
+
+        #display {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        
+
+        }
+
+        #data-input {
+            width: 100%;
+            height: 55px;
+            font-size: 36px;
+            border-radius: 10px;
+
+        }
+
+        .line {
+            width: 100%;
+            padding: 3px;
+            text-align: center;
+            margin: auto;
+        }
+
+        button {
+            width: 80px;
+            height: 80px;
+            padding: 4px;
+            background-color:dodgerblue;
+            border: none 0;
+            color:black;
+            transition: background .2s ease-in;
+            text-transform: uppercase;
+            cursor: pointer;
+            
+        }
+        .button:hover{
+            background-color: orange;
+            color: red;
+        }
+           
+          
+           
+                
+
+                
+        
+
+            
+
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <H1>CLOCK-FACE</H1>
+        
+        <div class="all">
+           
+    
+            <div id='clock'>
+            
+                <!-- clock 1 -->
+                <!--Clock No(1,2,....,12)-->
+    
+                <!--clock hands()-->
+                <ul class='hours'>
+                    <li>
+                        <span>
+                            1
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            2
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            3
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            4
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            5
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            6
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            7
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            8
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            9
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            10
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            11
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            12
+                        </span>
+                    </li>
+                </ul>
+                <div class='hr-wrapper'>
+                    <div class='hand hr'></div>
+                </div>
+                <div class="hands">
+                    <div class='min-wrapper'>
+                        <div class='hand min'></div>
+                    </div>
+                    <div class='sec-wrapper'>
+                        <div class='hand sec'></div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <br>
+
+     
+</div>
+
+        <br>
+            <br>
+            <h1>SAMPLE SMILER</h1>
+            <marquee behavior="slide" direction=""><div class="circle red hidden"></div>
+                <div class=" circle green hidden"></div>
+                <div class="circle blue hidden"></div>
+            
+                <div class="face-wrapper">
+                    <!-- this is a face -->
+                    <div class="face circle">
+                        <div class="eye circle left"></div>
+                        <div class="eye circle right"></div>
+            
+            
+                        <div class="mouth circle"></div>
+                        <div class="lip circle n-border"></div>
+                        <!-- this is a end of a face -->
+            
+                    </div>
+                </div></marquee>
+                <h1>CALCUATOR</h1>
+
+                <div id="calculator">
+                    <section id="display">
+                        <form action="#">
+                            <input type="text" id="data-input">
+                        </form>
+                    </section>
+                    <section id="numPad">
+                        <!-- line 1 of buttons -->
+                        <div class="line">
+                            <button>^</button>
+                            <button>Sqrt</button>
+                            <button>c</button>
+                            <button>del</button>
+            
+                        </div>
+                        <!-- line 2 of buttons -->
+                        <div class="line">
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button>/</button>
+            
+                        </div>
+                        <!-- line 3 of buttons -->
+                        <div class="line">
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button>*</button>
+            
+                        </div>
+                        <!-- line 4 of buttons -->
+                        <div class="line">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>-</button>
+            
+                        </div>
+                        <!-- line 5 of buttons -->
+                        <div class="line">
+                            <button>.</button>
+                            <button>0</button>
+                            <button>=</button>
+                            <button>+</button>
+            
+                        </div>
+            
+                    </section>
+                </div>
+
+        
+         
+
+            
+
+
+          
+    
+    
+        </body>
+        </html>
+        <script>
+        //    GET CURRENT TIME
+            var dateinfo =  new date();
+            var hr = dateinfo.gethours() > 12 ? dateinfo.gethours() - 12 : dateinfo.gethours(),
+            min = dateinfo.getminutes(),
+            sec = dateinfo.getseconds(),
+            milsec =dateinfo.getmilliseconds();
+            var hrAngle = hr * 30 +(min * 6/ 12),
+            minAngle = min * 6 +(sec * 6/ 60),
+            secAngle = sec * 6 + (milsec * 0.36  / 1000);
+ //    set initial angles of the hand wrappers
+ function setAngle(wrapper,angle) {
+     document.querySelector("." + wrapper) . style.transform = "rotate(" + angle +"deg) " ;
+ }
+
+            setAngle("hr-wrapper", hrAngle);
+            setAngle("min-wrapper", minAngle);
+            setAngle("sec-wrapper", secAngle);
+        </script>
+    
+    </html>
+        </div>
+        
+     "></marquee>
+        
+     

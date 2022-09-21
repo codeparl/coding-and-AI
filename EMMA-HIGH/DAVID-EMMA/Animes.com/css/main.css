@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: geog;
+}
+
+@font-face {
+    font-family: geog;
+    src: url(../fonts/Geogrotesq.ttf);
+}
+
+@font-face {
+    font-family: squid;
+    src: url(../fonts/Game\ Of\ Squids.otf);
+}
+
+body {
+    padding: 10px 10px;
+    background: #161634;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+}
+
+/* NAVBAR1 */
+
+    .navbar1 {
+        width: 25%;
+        height: 96.5vh;
+        padding: 5px 5px;
+        margin-right: 10px;
+        border-radius: 10px;
+        background: #0e0e1e;
+    }
+
+    .sidebar_logo {
+        height: 70px;
+        padding: 8px 5px;
+        border-radius: 10px;
+        background: #0a0a15;
+    }
+
+    .navbar1 h2 {
+        color: #fff;
+        margin: px 0;
+        cursor: pointer;
+    }
+
+    .navbar1 h2 span {
+        color: #6b2cf5;
+        font-family: squid;
+    }
+
+/* SEARCHBAR */
+
+    .searchbar {
+        width: 100%;
+        height: 80px;
+        margin: 10px 0;
+        border-radius: 10px;
+        padding: 20px 10px;
+        background: #0a0a15;
+    }
+
+    .search_image {
+        left: 0;
+        top: 0;
+        width: 941px;
+        display: flex;
+        height: 411px;
+        z-index: 1111;
+        max-width: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        position: absolute;
+        transition: .8s ease-in-out;
+        background: #0a0a15;
+    }
+    
+    .search_image img {
+        width: 20px;
+        height: 18px;
+        margin: 0 1250px;
+    }
+    
+    .search_image.active {
+        padding: 20px 0;
+        max-width: 1285px;
+        border-top: none;
+    }
+    
+    .search_bar input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 10px 10px;
+        border-radius: 5px;
+        background-color: transparent;
+        border-bottom: 1px solid #fff;
+    }
+
+/* IMAGE_SLIDER */
+
+    .lmage_slider {
+        width: 100%;
+        height: 270px;
+        margin: 10px 0;
+        padding: 5px 5px;
+        border-radius: 10px;
+        background: #0a0a15;
+    }
+
+    .box_slider {
+        width: 100%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: #A32CDF;
+    }
+
+    .splide {
+        height: 100%;
+        border-radius: 10px;
+        background: #7f00d4;
+    }
+
+    .splide__slide {
+        width: 100%;
+        height: 210px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+/* NAVBAR2 */
+
+    .navbar2 {
+        width: 75%;
+        height: 96.5vh;
+        padding: 5px 5px;
+        overflow-y: scroll;
+        border-radius: 10px;
+        background: #0e0e1e;
+    }
+
+/* ANIME_LOGO */
+
+    .Anime_logo {
+        width: 100%;
+        height: 50px;
+        padding: 15px 10px ;
+        margin: 1px 0 0;
+        border-radius: 10px;
+        background: #0a0a15;
+    }
+
+    .Anime_logo h3 {
+        color: #fff;
+    }
+
+    .Anime_logo h3 span {
+        color: #6b2cf5;
+        font-size: 15px;
+    }
+
+/* ANIME_LOGO_CREATED */
+
+    .Anime_logo_created {
+        width: 100%;
+        height: 50px;
+        padding: 15px 10px ;
+        margin: 10px 0;
+        border-radius: 10px;
+        background: #0a0a15;
+    }
+
+    .Anime_logo_created h3 {
+        color: #fff;
+    }
+
+/* NAVBAR_LOGO */
+
+    .navbar2 .navbar_logo {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        border-radius: 10px;
+        padding: 10px 20px;
+        position: relative;
+        align-items: center;
+        background: #0a0a15;
+        justify-content: space-between;
+    }
+
+/* HAMBURGER & BAR */
+
+    .hamburger {
+        cursor: pointer;
+    }
+
+    .hamburger .bar {
+        width: 20px;
+        height: 3px;
+        margin: 2px;
+        border-radius: 10px;
+        background: #fff;
+        transition: .5s ease-in-out;
+    }
+
+    .hamburger.active :nth-child(1) {
+        transform: rotate(45deg) translate(10px);
+    }
+    .hamburger.active :nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active :nth-child(3) {
+        transform: rotate(-45deg) translate(8px);
+    }
+
+/* TOP_LINKS */
+
+    .top_links {
+        top: 29px;
+        left: 60px;
+        max-width: 0;
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: .8s ease-in-out;
+    }
+    
+    .top_links.active {
+        max-width: 1000px;
+    }
+    
+    .top_links li {
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    .top_links a {
+        color: #fff;
+        transition: .3s ease-in-out;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .top_links a::after {
+        content: "";
+        position: absolute;
+        background: #A32CDF;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -1px;
+        transition: .5s;
+    }
+
+    .top_links a:hover::after {
+        width: 100%;
+    }
+
+/* NAV_BUTTON */
+
+    .nav_button .nav_sign {
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: #6b2cf5;
+    }
+
+    .nav_button .nav_sign a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .nav_button .nav_log {
+        width: 80px;
+        height: 30px;
+        border: 2px solid #6b2cf5;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+    .nav_button .nav_log a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+/* MAIN_BANNER */
+
+    .main_banner {
+        width: 100%;
+        height: 70%;
+        margin: 10px 0;
+        border-radius: 10px;
+        background: #fff;
+        padding: 100px 20px;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        background-image: url(../lmages/wallpaperflare.com_wallpaper\(11\).jpg);
+        box-shadow: inset 250px -0px 250px #000;
+    }
+
+    .main_banner h2 {
+        color: #fff;
+    }
+
+    .main_banner h1 {
+        color: #6b2cf5;
+        font-family: squid;
+    }
+
+    .main_banner h1 span {
+        color: #fff;
+    }
+
+    .main_banner p {
+        color: rgb(206, 206, 206);
+    }
+
+    .main_banner button {
+        width: 80px;
+        height: 30px;
+        border: none;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: #6b2cf5;
+    }
+
+    .main_banner a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+/* CONTAINER */
+
+    .container {
+        width: 100%;
+        height: 3vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-column-gap: 10px;
+    }
+
+    .item {
+        width: 100%;
+        padding: 5px 5px;
+        height: 90%;
+        border-radius: 10px;
+        background: #0a0a15;
+        /* border: 1px solid #000; */
+        position: relative;
+    }
+
+    .boxer {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px;
+        background: #fff;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0px -80px 70px #000;
+    }
+    
+    .lmage_cover {
+        width: 100%;
+        height: 47px;
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+
+    .lmage1 { background-image: url(../lmages/cover/Black_Summoner_light_novel_volume_1_cover.jpg);}
+    .lmage2 { background-image: url(../lmages/cover/124639.jpg);}
+    .lmage3 { background-image: url(../lmages/cover/Mob_Psycho_100_TV_Series-976847833-large.jpg);}
+    .lmage4 { background-image: url(../lmages/cover/death\ note.jpg);}
+
+/* CONTAINER_SOFTWEIR */
+
+    .container_softweir {
+        width: 100%;
+        height: 35vh;
+        margin-top: 110px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-column-gap: 8px;
+        border-radius: 10px;
+    }
+
+    .container_softweir .soft {
+        width: 100%;
+        height: 100%;
+        margin-right: 4px;
+        border-radius: 10px;
+        background: #0a0a15;
+    }
+
+    .soft_lmage {
+        width: 100%;
+        height: 100%;
+        padding: 20px 15px ;
+        border-radius: 10px;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.914) 50%, rgb(0,0,0,0.914) 50%), url(../lmages/run.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .soft_lmage1 {
+        width: 100%;
+        height: 100%;
+        padding: 20px 15px;
+        border-radius: 10px;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.914) 50%, rgba(0, 0, 0, 0.914) 50%), url(../lmages/softwares.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .soft h2 {
+        color: #fff;
+    }
+
+    .soft p {
+        margin: 10px 0;
+        color: rgb(177, 177, 177);
+    }
+
+    .soft button {        
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: #6b2cf5;
+    }
+
+    .soft a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+/*MAIN_MENU_BANNER*/
+
+    .update_banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .update_logo h2 {
+        color: #fff;
+        margin: 20px 0 0;
+    }
+
+    .main_banner_box {
+        width: 100%;
+        height: 37vh;
+        display: grid;
+        margin: 20px 0;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .main_menu_banner .box_item {
+        width: 100%;
+        height: 240px;
+        border-radius: 10px;
+        background: #fff;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0px -80px 70px #000;
+    }
+    
+    .update_banner_days {
+        display: flex;
+        margin: 25px 0 0;
+    }
+
+    .update_banner_days li {
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    .update_banner_days a {
+        color: #fff;
+        transition: .3s ease-in-out;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .update_banner_days a:hover {
+        color: #fff;
+    }
+
+    .update_banner_days a::after {
+        content: "";
+        position: absolute;
+        background: #A32CDF;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -1px;
+        transition: .5s;
+    }
+
+    .update_banner_days a:hover::after {
+        width: 100%;
+    }
+
+/* BANNER_LOVE */
+
+    .banner_love {
+        width: 100%;
+        height: 270px;
+        margin: 10px 0 0;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px 10px;
+        position: relative;
+        background: #0a0a15;
+        justify-content: space-between;
+    }
+
+    .banner_love h1 {
+        top: 40px;
+        position: absolute;
+        z-index: -0;
+        font-size: 155px;
+        color: #0e0e1e;
+    }
+
+    .love_info {
+        z-index: 2;
+    }
+
+    .love_info h2 {
+        color: #fff;
+        margin: 10px 0;
+    }
+
+    .love_info h2 span {
+        color: #6b2cf5;
+    }
+
+    .love_info p {
+        color: rgb(177, 177, 177);
+    }
+
+    .love_info button {
+        width: 90px;
+        height: 30px;
+        border: none;
+        margin: 10px 0;
+        background: #6b2cf5;
+    }
+
+    .love_info button a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .love_items {
+        display: flex;
+        z-index: 2;
+    }
+    
+    .love_items .box_items {
+        width: 200px;
+        height: 250px;
+        border-radius: 10px;
+        margin-right: 10px;
+        background: #7f00d4;
+    }
+
+    .loves_itsms .bosx_item {
+        width: 200px;
+        height: 250px;
+        width: 100%;
+        height: 37vh;
+        display: grid;
+        margin: 0px 0;
+        border-radius: 10px;
+        background: #7f00d4;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .loves_itsms {
+        width: 100%;
+        height: 37vh;
+        display: grid;
+        margin:10px 0;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+/* BOXS */
+
+    .box1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url(../lmages/cover/classroom\ of\ the\ elite.jpg);
+    }
+
+    .box2 {
+        background-position: center;
+        background-size: cover;
+        background-image: url(../lmages/cover/7bc8c9488719bd7e9c65e1de6f0d6e10.jpg);
+    }
+
+    .box3 {
+        background-position: center;
+        background-size: cover;
+        background-image: url(../lmages/cover/124639.jpg);
+    }
+
+    .box4 {
+        background-position: center;
+        background-size: cover;
+        background-image: url(../lmages/cover/Fuuto_PI_English_Poster.jpg);
+    }

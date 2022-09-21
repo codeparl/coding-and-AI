@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-border {
+            height: 500px;
+            width: 900px;
+            margin: 5px;
+            margin-left: 5%;
+            border: solid black 21px;
+
+
+            box-sizing: border-box;
+            background-color: rgb(8, 243, 63);
+        }
+
+
+
+
+
+        .rect-2 {
+            width: 80px;
+            height: 400px;
+            border: solid red 3px;
+            box-sizing: border-box;
+
+        }
+
+        .hed {
+
+
+            width: 35px;
+            height: 60px;
+            box-sizing: border-box;
+            background-color: black;
+            border-radius: 30px;
+            border: solid gray 2px;
+            position: absolute;
+            top: 75%;
+            left: 0%;
+            z-index: 4;
+            padding: 10px;
+            display: flex;
+        }
+
+        .ey {
+            width: 20px;
+            height: 20px;
+            box-sizing: border-box;
+            background-color: red;
+            border-radius: 100%;
+            border: solid gray 2px;
+            position: absolute;
+            top: 78%;
+
+            z-index: 4;
+        }
+
+        .sgm-1 {
+            width: 30px;
+            height: 70px;
+            box-sizing: border-box;
+            background-color: black;
+
+            border: solid gray 2px;
+            position: absolute;
+            top: 60%;
+            left: 4%;
+            margin-top: 0%;
+
+        }
+
+        .sgm-2 {
+            width: 30px;
+            height: 70px;
+            box-sizing: border-box;
+            background-color: black;
+
+            border: solid gray 2px;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            margin-top: 0%;
+            z-index: 4;
+        }
+
+        .sgm-3 {
+            width: 30px;
+            height: 70px;
+            box-sizing: border-box;
+            background-color: black;
+
+            border: solid gray 2px;
+            position: absolute;
+            top: 34%;
+            left: 5%;
+            margin-top: 0%;
+            z-index: 4;
+
+        }
+
+        .sgm-4 {
+            width: 30px;
+            height: 70px;
+            box-sizing: border-box;
+            background-color: black;
+
+            border: solid gray 2px;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            margin-top: 0%;
+            border-radius: 100px;
+
+        }
+
+        .bd-1 {
+            width: 15%;
+            height: 460px;
+            display: inline-block;
+            background-color: pink;
+            border: 5px solid black;
+
+        }
+
+        .bd-2 {
+            width: 15%;
+            height: 460px;
+            display: inline-block;
+            background-color: pink;
+            border: 5px solid black;
+        }
+
+        .bd-3 {
+            width: 15%;
+            height: 460px;
+            display: inline-block;
+            background-color: pink;
+            border: 5px solid black;
+
+        }
+
+        .bd-4 {
+            width: 15%;
+            height: 460px;
+            display: inline-block;
+            background-color: pink;
+            border: 5px solid black;
+
+        }
+
+        .bd-5 {
+            width: 15%;
+            height: 460px;
+            display: inline-block;
+            background-color: pink;
+            border: 5px solid black;
+
+        }
+
+        .bd-6 {
+            width: 15%;
+            height: 460px;
+            display: inline-block;
+            background-color: pink;
+            border: 5px solid black;
+            border-right: solid black 10px;
+
+        }
+
+        .lst {
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            top: 80%;
+            right: 15%;
+            transition: all 0s;
+        }
+
+        .lst:hover {
+            background-color: yellowgreen;
+            color: red;
+        }
+
+
+        .head {
+
+
+            width: 35px;
+            height: 60px;
+            box-sizing: border-box;
+            background-color: black;
+            border-radius: 10px;
+            border: solid gray 2px;
+            position: absolute;
+            top: 73%;
+            left: 4%;
+
+            padding: 10px;
+            display: flex;
+        }
+
+        .eye {
+            width: 20px;
+            height: 20px;
+            box-sizing: border-box;
+            background-color: red;
+            border-radius: 100%;
+            border: solid gray 2px;
+            position: absolute;
+            top: 26%;
+            left: 12%;
+            z-index: 4;
+
+        }
+
+        .sgmt-1 {
+            width: 35px;
+            height: 60px;
+            box-sizing: border-box;
+            background-color: black;
+
+            border: solid gray 2px;
+            position: absolute;
+            top: 60%;
+            left: 4%;
+            margin-top: 0%;
+
+        }
+
+
+
+        .sgmt-2 {
+            width: 35px;
+            height: 60px;
+            box-sizing: border-box;
+            background-color: black;
+
+            border: solid gray 2px;
+            position: absolute;
+            top: 49%;
+            left: 5%;
+            margin-top: 0%;
+            
+        }
+
+        .sgmt-3 {
+            width: 35px;
+            height: 60px;
+            box-sizing: border-box;
+            background-color: black;
+
+            border: solid gray 2px;
+            position: absolute;
+            top: 34%;
+            left: 5%;
+            margin-top: 0%;
+            z-index: 4;
+
+        }
+
+        .sgmt-4 {
+            width: 35px;
+            height: 60px;
+            box-sizing: border-box;
+            background-color: black;
+            padding: 10px;
+            border: solid gray 2px;
+            position: absolute;
+            top: 22%;
+            left: 5%;
+            margin-top: 0%;
+            border-radius: 100px;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-border">
+        <div class="bd-1">
+            <marquee behavior="alternative" direction="down">
+                <div class="rect-2">
+                    <div class="hed"></div>
+                    <div class="bal"></div>
+                    <div class="ey"></div>
+                    <div class="sgm-1"></div>
+                    <div class="sgm-2"></div>
+                    <div class="sgm-3"></div>
+                    <div class="sgm-4"></div>
+                </div>
+            </marquee>
+        </div>
+        <div class="bd-2">
+            <marquee behavior="alternative" direction="up">
+                <div class="rect-2">
+                    <div class="head"></div>
+                    <div class="bal"></div>
+                    <div class="eye"></div>
+                    <div class="sgmt-1"></div>
+                    <div class="sgmt-2"></div>
+                    <div class="sgmt-3"></div>
+                    <div class="sgmt-4"></div>
+                </div>
+            </marquee>
+        </div>
+        <div class="bd-3">
+            <marquee behavior="alternative" direction="down">
+                <div class="rect-2">
+                    <div class="hed"></div>
+                    <div class="bal"></div>
+                    <div class="ey"></div>
+                    <div class="sgm-1"></div>
+                    <div class="sgm-2"></div>
+                    <div class="sgm-3"></div>
+                    <div class="sgm-4"></div>
+                </div>
+            </marquee>
+        </div>
+        <div class="bd-4">
+            <marquee behavior="alternative" direction="up">
+                <div class="rect-2">
+                    <div class="head"></div>
+                    <div class="bal"></div>
+                    <div class="eye"></div>
+                    <div class="sgmt-1"></div>
+                    <div class="sgmt-2"></div>
+                    <div class="sgmt-3"></div>
+                    <div class="sgmt-4"></div>
+                </div>
+            </marquee>
+        </div>
+        <div class="bd-5">
+            <marquee behavior="alternative" direction="down">
+                <div class="rect-2">
+                    <div class="hed"></div>
+                    <div class="bal"></div>
+                    <div class="ey"></div>
+                    <div class="sgm-1"></div>
+                    <div class="sgm-2"></div>
+                    <div class="sgm-3"></div>
+                    <div class="sgm-4"></div>
+                </div>
+            </marquee>
+        </div>
+        <div class="bd-6">
+            <marquee behavior="alternative" direction="up">
+                <div class="rect-2">
+                    <div class="head"></div>
+                    <div class="bal"></div>
+                    <div class="eye"></div>
+                    <div class="sgmt-1"></div>
+                    <div class="sgmt-2"></div>
+                    <div class="sgmt-3"></div>
+                    <div class="sgmt-4"></div>
+                </div>
+            </marquee>
+        </div>
+    </div>
+    <button class="lst"> <a href="../GAME FILES/Index.html"> QUIT GAME</a></button>
+
+
+
+</body>
+
+</html>

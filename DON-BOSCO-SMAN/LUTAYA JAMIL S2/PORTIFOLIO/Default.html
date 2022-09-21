@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="icon" href="../IMG-20210823-WA0013.jpeg">
+    <link rel="stylesheet" href="../GRAMI CAFE/Assets/Icons/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="../sass/main.css">
+</head>
+<body>
+    <div class="img-holder">
+        <img src="../IMG-20210823-WA0013.jpeg" alt="jamil image">
+    </div>
+    <div class="container-wrapper">
+        <header id="header">
+            <nav class="navbar">
+                <div class="menu-wrapper">
+                    <div class="menu" onclick="showasidebar(), changeIcon(), showclosebtn()" id="menuIcon">
+                        <div></div>
+                        <div onclick="addbottom()" id="addbot"></div>
+                        <div></div>
+                    </div>
+                    <button class="btn-close" onclick="hidesidebar(), showMenuIcon(), hidecloseBtn()" id="closeBtn">
+                        &times;
+                    </button>
+                </div>
+               <span class="my-name">LUTAAYA JAMIL | <small>OverView</small></span>
+                <div class="lang-wrapper">
+                    <i class="fa fab fas fa-language lang-icon"></i>
+                    <i class="fa fa-angle-down angle"></i>
+                </div>
+                <big>Change Language</big>
+            </nav>
+            <aside id="sidebar-nav">
+                    <ul>
+                        <li>
+                            <a href="./Default.html">OverView</a>
+                        </li>
+                        <li>
+                            <a href="./moreAboutMe.html">More About Me</a>
+                        </li>
+                        <li>
+                            <a href="./projects.html">Projects</a>
+                        </li>
+                    </ul>
+                </aside>
+        </header>
+        <section class="overview-section">
+            <div class="container">
+                <p class="overView-lead">
+                    <di class="top-content">
+                        <h1>I am <span style="display: block; padding-top: .1rem;">a</span></h1><br>
+                    </di>
+                    <hr>
+                    Future Programmer..
+                    <blockquote title="quote">
+                        <h5>" A COMPUTER IS MY BEST FRIEND !!! " </h5>
+                    </blockquote>
+                </p>
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p class="lead-about-me" style="font-size: 1.3rem;">
+                    I wanna be a computer and software engineer in life and  achive an entry point level in Computer Science
+                    and the position in Chemistry and Physics.
+                </p>
+            </div>
+            <div class="contact-me">
+                <p>
+                    <h5>Email :</h5>
+                     <span><a href="mailto">jerzylucjan86@gmail.com</a></span>
+                    <h5>Phone :</h5><span>+25677315013</span>
+                    <h5>Address :</h5><span>Najjera 2, street 86</span>
+                </p>
+            </div>
+        </section>
+        <footer >
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="facebook fa fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="github fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="instagram fa fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="youtube fa fab fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="copy-right">
+                Copyright, 2022 by Lutaay Jamil.
+            </p>
+        </footer>
+    </div>
+    <script src="../../GRAMI CAFE/Assets/Icons/fontawesome-free-6.1.1-web/js/all.js"></script>
+    <script>
+       function showasidebar(){
+        var asidebar = document.getElementById("sidebar-nav");
+        asidebar.style.transform ="translateX(0)"
+        asidebar.style.transition ="all 200ms ease";
+       }
+
+       function changeIcon(){
+        var changeIconMenu = document.getElementById("menuIcon");
+        changeIconMenu.style.transform ="scale(0)"
+        changeIconMenu.style.display ="none" 
+        changeIconMenu.style.transition ="all 200ms ease";
+       }
+
+       function  showclosebtn(){
+        var asidebar = document.getElementById("closeBtn");
+        asidebar.style.transform ="scale(1)"
+        asidebar.style.transition ="all 200ms ease";
+       }
+
+       function hidesidebar(){
+        var changeIconMenu = document.getElementById("sidebar-nav");
+        changeIconMenu.style.transform ="translateX(-100%)"
+        changeIconMenu.style.transition ="all 200ms ease";
+       }
+
+       function  showMenuIcon(){
+        var changeIconMenu = document.getElementById("menuIcon");
+        changeIconMenu.style.transform ="scale(1)"
+        changeIconMenu.style.display ="block" 
+        changeIconMenu.style.transition ="all 200ms ease";
+       }
+
+       function hidecloseBtn(){
+        var hidecloseBtn = document.getElementById("closeBtn");
+        hidecloseBtn.style.transform ="scale(0)"
+        hidecloseBtn.style.display ="block"
+        hidecloseBtn.style.transition ="all 200ms ease";
+       }
+
+       function addbottom(){
+         document.getElementById("addbot").style.marginBlock= ".5rem";
+       }
+       </script>
+</body>
+</html>

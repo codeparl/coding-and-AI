@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        #container{
+            background-color: rgb(9, 32, 54);
+            border: 2px solid black;
+            width: 270px;
+            font-size: 40px;
+            border-radius: 32px;
+            
+            padding: 0px 0px 0px 0px ;
+            margin-left: 500px;
+            
+        }
+        .screen{
+            border: 2px solid black;
+            background-color: darkslategrey;
+            margin: 40px 10px 40px 10px;
+            border-radius: 5px;
+            padding-bottom: 20px;
+        }
+        #battons{
+            padding-left: 10px;
+            padding-bottom: 30px;
+            font-size:30px;
+            padding-right: 10px;
+            border: 2px solid black;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            display: flex;
+            padding-top: 25px;
+            
+            
+            
+                }
+                .rowr{
+                    font-size: 30px;
+                    margin: 5px 5px 5px 5px;
+                    
+                }
+                button{
+                    background-color: rgba(47, 54, 59, 0.877);
+                    color: aliceblue;
+                    border-radius: 5px;
+                    border: 1PX solid rgba(47, 54, 59, 0.877);
+                    font-size: 20px;
+                    padding-top: 5px;
+                    margin-top: 20px;
+                }
+                
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="screen">
+            <marquee direction="right">display</marquee>
+        </div>
+        <div id="battons">
+            <div class="rowr">
+                <button><span>ON</span></button>
+                <button><span>8</span></button>
+                <button><span>5</span></button>
+                <button><span>2</span></button>
+            </div>
+            <div class="rowr">
+                <button><span>Off</span></button>
+                <button><span>7</span></button>
+                <button><span>4</span></button>
+                <button><span>1</span></button>
+            </div>
+            <div class="rowr">
+                <button><span>9</span></button>
+                <button><span>6</span></button>
+                <button><span>3</span></button>
+                <button><span>0</span></button>
+            </div>
+            <div class="rowr">
+                
+                <button><span>sq</span></button>
+                <button> <span>/</Cspan></button>
+                <button><span>*</span></button>
+                <button><span>.</span></button>
+            
+            </div>
+           
+            <div class="rowr">
+                <button><span>C</span></button>
+                    <button><span>-</span></button>
+                    <button><span>+</span></button>
+                    <button><span>=</span></button>
+             </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            width: 15%;
+            height: 450px;
+            background-color: aqua;
+            position: relative;
+            left: 2000px;
+            top: -6240px;
+        }
+        
+        .fore {
+            width: 258px;
+            height: 40px;
+            background-color: rgb(244, 248, 0);
+            position: relative;
+            top: -920px;
+            left: -96px;
+        }
+        
+        .fore2 {
+            width: 40px;
+            height: 0px;
+            background-color: rgb(244, 248, 0);
+            position: relative;
+            top: -730px;
+            left: -170px;
+        }
+        
+        .face {
+            width: 40px;
+            height: 60px;
+            border: 200px solid yellow;
+            border-radius: 88%;
+            color: yellow;
+        }
+        
+        .eyes {
+            position: relative;
+            right: -65px;
+            top: -190px;
+            width: 30px;
+            height: 50px;
+            border: 30px solid rgb(250, 243, 243);
+            border-radius: 88%;
+            background-color: rgb(7, 7, 6);
+        }
+        
+        .eyes2 {
+            position: relative;
+            left: -120px;
+            top: -290px;
+            width: 30px;
+            height: 50px;
+            border: 30px solid rgb(253, 250, 250);
+            border-radius: 88%;
+            background-color: rgb(7, 7, 6);
+        }
+        
+        .mouth {
+            width: 200px;
+            height: 20px;
+            border: 20px solid purple;
+            border-radius: 100px;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            left: -95px;
+            top: -250px;
+            animation-name: talk;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes talk {
+            10% {
+                width: 140px;
+                height: 5px;
+            }
+            20% {
+                width: 200px;
+                height: 25px;
+            }
+            30% {
+                width: 185px;
+                height: 20px;
+            }
+            40% {
+                width: 190px;
+                height: 26px;
+            }
+            50% {
+                width: 200px;
+                height: 26px;
+            }
+            60% {
+                width: 180px;
+                height: 34px;
+            }
+            70% {
+                width: 200;
+                height: 37;
+            }
+            80% {
+                background-color: rgb(243, 119, 171);
+                width: 200px;
+                height: 37px;
+            }
+        }
+        
+        .neck {
+            width: 210px;
+            height: 100px;
+            background-color: rgb(248, 224, 2);
+            position: relative;
+            top: -45px;
+            left: 125px;
+        }
+        
+        .chest {
+            width: 500px;
+            height: 600px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 10%;
+            position: relative;
+            top: -80px;
+            left: 2px;
+        }
+        
+        .hair {
+            width: 300px;
+            height: 140px;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            top: -210px;
+            left: -124px;
+            border-radius: 80%;
+        }
+        
+        .hair2 {
+            width: 80px;
+            height: 200px;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            top: -790px;
+            left: -187px;
+            border-radius: 80%;
+            transform: rotate(20deg);
+        }
+        
+        .hair3 {
+            width: 80px;
+            height: 200px;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            top: -580px;
+            left: 170px;
+            border-radius: 80%;
+            transform: rotate(340deg);
+        }
+        
+        .cover {
+            width: 50px;
+            height: 600px;
+            background-color: transparent;
+            position: absolute;
+            top: 60px;
+        }
+        
+        .slive {
+            width: 0px;
+            height: 0px;
+            border: 100px solid transparent;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            border-bottom: 0px solid transparent;
+            border-top: 200px solid yellow;
+            position: relative;
+            top: -679px;
+            left: 90px;
+        }
+        
+        .arms {
+            width: 120px;
+            height: 600px;
+            background-color: yellow;
+            border-radius: 20px;
+            position: relative;
+            top: -870px;
+            left: -120px;
+            transform: rotate(3deg);
+            animation-direction: alternate;
+            animation-name: dell;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes dell {
+            0% {
+                transform: rotate(20deg);
+            }
+            10% {
+                transform: rotate (5deg);
+            }
+            20% {
+                transform: rotate (20deg);
+            }
+            30% {
+                transform: rotate (20deg);
+            }
+            40% {
+                transform: rotate (5deg);
+            }
+            50% {
+                transform: rotate (20deg);
+            }
+            60% {
+                transform: rotate (20deg);
+            }
+        }
+        
+        .arms2 {
+            width: 120px;
+            height: 600px;
+            background-color: yellow;
+            border-radius: 20px;
+            position: relative;
+            top: -1540px;
+            left: 480px;
+            transform: rotate(357deg);
+            transform: rotate(3deg);
+            animation-direction: alternate;
+            animation-name: dell2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes dell2 {
+            0% {
+                transform: rotate(-10deg);
+            }
+            10% {
+                transform: rotate (-20deg);
+            }
+            20% {
+                transform: rotate (-10deg);
+            }
+            30% {
+                transform: rotate (-20deg);
+            }
+            40% {
+                transform: rotate (-10deg);
+            }
+            50% {
+                transform: rotate (-20deg);
+            }
+            60% {
+                transform: rotate (-210deg);
+            }
+        }
+        
+        .leghold {
+            width: 240px;
+            height: 800px;
+            background-color: transparent;
+            position: relative;
+            top: -1925px;
+            left: 260px;
+        }
+        
+        .leghold2 {
+            width: 240px;
+            height: 890px;
+            background-color: transparent;
+            position: relative;
+            top: -2725px;
+            left: 21px;
+        }
+        
+        .legs1 {
+            width: 220px;
+            height: 700px;
+            background-color: yellow;
+            border-radius: 20px;
+            position: relative;
+            top: -29;
+            bottom: 39px;
+            transform: rotate(356deg);
+        }
+        
+        .legs2 {
+            width: 220px;
+            height: 700px;
+            background-color: yellow;
+            border-radius: 20px;
+            position: relative;
+            top: -49px;
+            left: -20px;
+            transform: rotate(4deg);
+        }
+        
+        .buttons {
+            width: 28px;
+            height: 427px;
+            background-color: black;
+            position: relative;
+            top: -1949px;
+            left: 226px;
+        }
+        
+        .belt {
+            width: 500px;
+            height: 60px;
+            background-color: brown;
+            position: relative;
+            top: -900px;
+        }
+        
+        .sq {
+            width: 48px;
+            height: 50px;
+            background-color: silver;
+            margin-left: 40%;
+        }
+        
+        .house {
+            position: relative;
+            top: -4690px;
+            right: -2000px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px solid transparent;
+            border-bottom: 500px solid rgb(207, 75, 75);
+            border-left: 2000px solid transparent;
+            border-right: 2000px solid transparent;
+        }
+        
+        .hb {
+            position: relative;
+            top: -4690px;
+            right: -2300px;
+            width: 3500px;
+            height: 1000px;
+            background-color: rgb(235, 176, 68);
+        }
+        
+        .door {
+            width: 590px;
+            height: 850px;
+            background-color: rgb(29, 7, 7);
+            margin-left: 40%;
+            position: inherit;
+            top: 100px;
+            border: 30px ridge red;
+            transition: transform 1s;
+        }
+        
+         :hover .door {
+            background-color: rgb(53, 11, 11);
+            transform: translatex(10%);
+        }
+        
+        .knob {
+            width: 50px;
+            height: 50px;
+            background-color: silver;
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 85%;
+            border: 10px dotted brown;
+            transition: uppercase;
+        }
+        
+         :hover .knob {
+            width: 45px;
+            transform: rotate(20deg);
+            border-radius: 40%;
+        }
+        
+        .win {
+            width: 500px;
+            height: 450px;
+            background-color: gray;
+            margin-left: 10%;
+            position: inherit;
+            top: -800px;
+        }
+        
+        .st {
+            width: 10px;
+            height: 510px;
+            background-color: black;
+            position: relative;
+            top: -550px;
+            left: 250px;
+        }
+        
+        .st2 {
+            width: 500px;
+            height: 5px;
+            background-color: black;
+            border: 5px ridge black;
+            position: relative;
+            top: -810px;
+        }
+        
+        .win2 {
+            width: 500px;
+            height: 450px;
+            background-color: grey;
+            margin-left: 79%;
+            position: inherit;
+            top: -1250px;
+        }
+        
+        .stb {
+            width: 10px;
+            height: 450px;
+            background-color: black;
+            margin-left: 50%;
+        }
+        
+        .stc {
+            width: 500px;
+            height: 10px;
+            background-color: black;
+            margin-top: -45%;
+        }
+        
+        .car {
+            width: 10%;
+            height: 10%;
+            background-color: red;
+            border-radius: 5%;
+        }
+        
+        .sed {
+            background-color: blue;
+        }
+        
+        .sed :hover {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+        }
+        
+        .red {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: -45px;
+        }
+        
+        .net {
+            z-index: 20%;
+        }
+    </style>
+</head>
+<h1>click g to go back to game<a href="m imposible.html">g</a></h1>
+
+<body style="margin-left: 10%;background-color: green;align-content: center;">
+    <marquee behavior="alternate" direction="right" class="net">
+        <div class="face">
+            <div class="hair"></div>
+            <div class="eyes"></div>
+            <div class="eyes2"></div>
+            <div class="mouth"></div>
+            <div class="hair3"></div>
+            <div class="hair2"></div>
+            <div class="fore"></div>
+            <div class="fore2"></div>
+            <div class="cover"></div>
+        </div>
+        <div class="neck"></div>
+        <div class="chest"></div>
+        <div class="slive"></div>
+        <div class="arms"></div>
+        <div class="belt">
+            <div class="sq"></div>
+        </div>
+        <div class="arms2"></div>
+        <div class="buttons"></div>
+        <div class="leghold">
+            <marquee behavior="alternate" direction="right">
+                <div class="legs1"></div>
+            </marquee>
+        </div>
+        <div class="leghold2">
+            <marquee behavior="alternate" direction="right,left">
+                <div class="legs2"></div>
+            </marquee>
+        </div>
+        </div>
+    </marquee>
+    <div class="house"></div>
+    <div class="hb">
+        <div class="door">
+            <div class="knob"></div>
+            <div class="st"></div>
+            <div class="st2"></div>
+        </div>
+        <div class="win">
+            <img src="mine.jpg" alt="" class="red">
+            <div class="st"></div>
+            <div class="st2">
+            </div>
+        </div>
+        <div class="win2">
+            <div class="stb"></div>
+            <div class="stc"></div>
+        </div>
+    </div>
+
+
+</html>

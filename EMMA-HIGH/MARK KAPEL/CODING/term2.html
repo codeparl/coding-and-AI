@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript codes</title>
+</head>
+<body>
+  <div>
+    <div id="input">
+<form action="">
+    <input id="num" name="num" type="text">
+    <button onclick="checkPrime()" type="button">Check</button>
+</form>
+<div>
+    <span id="answer"> Please enter a number >=2 </span>
+</div>
+    </div>
+  </div>  
+  <script>
+    function checkPrime(){
+        // Get the number from the input
+        var input = window.document.forms[0] ['num'].value;
+        var guessNum = parseInt(input, 10);
+        //consel.log (input);
+        var answer = isPrime(guessNum);
+        var ansText += (answer == true ? 'isPrime!' : 'is not prime')
+    }
+  </script>
+</body>
+</html>

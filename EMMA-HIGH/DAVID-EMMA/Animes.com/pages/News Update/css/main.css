@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: geog;
+}
+
+@font-face {
+    font-family: squid;
+    src: url(../../../fonts/Game\ Of\ Squids.otf);
+}
+
+@font-face {
+    font-family: geog;
+    src: url(../../../fonts/Geogrotesq.ttf);
+}
+
+body {
+    padding: 5px 5px;
+    overflow: hidden;
+    background-color: #161634;
+}
+
+/* NAVBAR */
+
+    .navbar {
+        height: 12vh;
+        display: flex;
+        border-radius: 10px;
+        padding: 5px 20px ;
+        justify-content: space-between;
+        align-items: center;
+        background: #0a0a15;
+    }
+
+/* NAVBAR1 */
+
+    .navbar1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar1 h2 a {
+        color: #6b2cf5;
+        font-family: squid;
+        text-decoration: none;
+    }
+
+    .navbar1 h2 span {
+        color: #fff;
+    }
+
+/* HAMBURGER & BAR */
+
+    .hamburger {
+        cursor: pointer;
+        margin: 0 20px;
+    }
+
+    .hamburger .bar {
+        width: 20px;
+        height: 3px;
+        margin: 2px;
+        border-radius: 10px;
+        background: #fff;
+    }
+
+/* TOP_LINKS */
+
+    .top_links {
+        top: 33px;
+        left: 300px;
+        max-width: 0;
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: .8s ease-in-out;
+    }
+    
+    .top_links.active {
+        max-width: 1000px;
+    }
+    
+    .top_links li {
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    .top_links a {
+        color: #fff;
+        transition: .3s ease-in-out;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .top_links a::after {
+        content: "";
+        position: absolute;
+        background: #A32CDF;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -1px;
+        transition: .5s;
+    }
+
+    .top_links a:hover::after {
+        width: 100%;
+    }
+
+/* NAV_BUTTON */
+
+    .nav_button .nav_sign {
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: #6b2cf5;
+    }
+
+    .nav_button .nav_sign a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .nav_button .nav_log {
+        width: 80px;
+        height: 30px;
+        border: 2px solid #6b2cf5;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+    .nav_button .nav_log a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+/* MAIN */
+
+    main {
+        display: flex;
+    }
+
+/* SIDE_BAR */
+
+    .side_bar {
+        width: 25%;
+        height: 84.9vh;
+        padding: 5px 5px;
+        margin: 5px 0px;
+        border-radius: 10px;
+        background: #0e0e1e;
+    }
+
+    .side_bar .side_logo {
+        width: 100%;
+        height: 80px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background: #0a0a15;
+    }
+
+    .side_bar .side_logo h2 {
+        color: #fff;
+    }
+
+    .side_bar .side_logo h1 {
+        color: #6b2cf5;
+    }
+
+/* SEARCHBAR */
+
+    .searchbar {
+        width: 100%;
+        height: 80px;
+        margin: 10px 0;
+        border-radius: 10px;
+        padding: 20px 10px;
+        background: #0a0a15;
+    }
+
+    .search_image {
+        left: 5px;
+        top: 5px;
+        width: 956px;
+        display: flex;
+        height: 372px;
+        z-index: 1111;
+        max-width: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        position: absolute;
+        /* justify-content: center; */
+        transition: .8s ease-in-out;
+        background: #0a0a15;
+    }
+    
+    .search_image img {
+        width: 20px;
+        height: 18px;
+        margin: 0 1250px;
+    }
+    
+    .search_image.active {
+        padding: 20px 0;
+        max-width: 1285px;
+        border-top: none;
+        /* border: 2px solid rgb(43, 43, 43); */
+    }
+    
+
+    .search_bar input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 10px 10px;
+        border-radius: 5px;
+        background-color: transparent;
+        border-bottom: 1px solid #fff;
+    }
+
+/* BANNER_WEEKS */
+
+    .banner_weeks {
+        width: 100%;
+        height: 200px;
+        padding: 10px 5px;
+        border-radius: 10px;
+        background: #0a0a15;
+    }
+
+    .side_weeks li {
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    .side_weeks li a {
+        color: #898989;
+        text-decoration: none;
+    }
+
+    .side_weeks li a:hover {
+        color: #fff;
+    }
+
+    .side_weeks .a1 a span {
+        margin-left: 150px;
+        color: #6b2cf5;
+    }
+
+    .side_weeks .a2 a span {
+        margin-left: 125px;
+        color: #6b2cf5;
+    }
+
+    .side_weeks .a3 a span {
+        margin-left: 114px;
+        color: #6b2cf5;
+    }
+
+    .side_weeks .a4 a span {
+        margin-left: 121px;
+        color: #6b2cf5;
+    }
+
+    .side_weeks .a5 a span {
+        margin-left: 119px;
+        color: #6b2cf5;
+    }
+
+/* SIDE_MAIN */
+
+    .side_main {
+        width:80%;
+        height: 85vh;
+        margin: 5px 10px;
+        padding: 5px 5px;
+        overflow-y: scroll;
+        border-radius: 10px;
+        position: relative;
+        background: #0e0e1e;
+    }
+
+/* BANNER_MAIN */
+/* 
+    .banner_main {
+        width: 100%;
+        height: 350px;
+        margin: 0px 0;
+        padding: 5px 5px;
+        border-radius: 10px;
+        background: #0a0a15;
+    } */
+
+    .side_main_banner {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        padding: 5px 5px;
+        border-radius: 10px;
+        background: #0a0a15;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../../lmages/wallpaperflare.com_wallpaper\(14\).jpg);
+    }
+
+    .info_main_banner {
+        bottom: 5px;
+        width: 300px;
+        border-radius: 10px;
+        height: 341px;
+        padding: 50px 10px;
+        position: absolute;
+        background: #0e0e1e;
+    }
+
+    .info_main_banner h1 {
+        color: #fff;
+    }
+
+    .info_main_banner h3 {
+        color: #6c2cf56d;
+    }
+
+    .info_main_banner p {
+        color: #ffffff59;
+    }
+
+    .info_main_banner button {
+        width: 80px;
+        height: 30px;
+        border: none;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: #6b2cf5;
+    }
+
+    .info_main_banner button a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+/* NEWA_BOX */
+
+    .news_box {
+        width: 100%;
+        height: 350px;
+        margin: 10px 0;
+        display: flex;
+        padding: 5px 5px;
+        border-radius: 10px;
+        background: #0a0a15;
+    }
+    
+    .news_boxs {
+        width: 50%;
+        height: 150%;
+        border-radius: 10px;
+        margin-right: 10px;
+        background: #6b2cf5;
+    }
+    
+    .news_boxs1 {
+        width: 50%;
+        height: 150%;
+        border-radius: 10px;
+        background: #6b2cf5;
+    }
+
+/* BOXER */
+
+    .news_boxs .boxer {
+        width: 100%;
+        height: 23%;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
